@@ -1,11 +1,16 @@
 import React from "react";
 import BasketPage from "./components/index";
-import './App.css';
+import { connect } from "react-redux";
 
-export default () => {
-  return (
-    <div className="App">
-        <BasketPage />
-    </div>
-  );
+const App = () => {
+  return <BasketPage />;
 };
+
+const mapStateToProps = store => {
+  return { ...store };
+};
+
+export default connect(
+  mapStateToProps,
+  null
+)(BasketPage);

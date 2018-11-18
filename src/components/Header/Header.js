@@ -17,14 +17,12 @@ const HeaderWrapper = styled.div`
   height: 40px;
   width: 100%;
   background-color: #e4e4e4;
-  border: 1px solid red;
 `;
 
 const HeaderNav = styled.div`
   display: flex;
   height: 100%;
   width: 1170px;
-  border: 1px solid green;
 `;
 
 const NumberWrapper = styled.div`

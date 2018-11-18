@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const FreeCall = styled.div`
-    font-size: 14px;
+    font-size: 13px;
     font-family: "Roboto";
     margin-top:2px;
     color: rgb(0, 0, 0);

@@ -21,8 +21,8 @@ const Text = styled.h2`
   align-self: center;
   display: flex;
   align-items: center;
-  margin-top: 48px;
-  margin-bottom: 55px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   width: 1170px;
   font-size: 22px;
   font-family: "Roboto";
@@ -54,15 +54,41 @@ const SecondBlock = styled.div`
   display: flex;
   justify-content: space-between;
   height: 100%;
-  border: 1px solid grey;
-`;
-const PhotoBlock = styled.div`
 `;
 
+const ItemBlock = styled.div`
+  height: 100%;
+  width: 276px;
+`;
 
+const ItemPhoto = styled.div`
+  height: 276px;
+  width: 276px;
+`;
 
-export default () => {
-    console.log(getAdPhoto(1))
+const ItemName = styled.div`
+  text-align: center;
+  margin: 5px 0 0 0;
+  padding: 0 5px;
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  margin-bottom: 8px;
+`;
+
+const ItemPrice = styled.div`
+  text-align: center;
+  font-size: 16px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+`;
+
+export default ({ addList }) => {
+  console.log(addList);
   return (
     <AdWrapper>
       <AdContainer>
@@ -70,7 +96,18 @@ export default () => {
           <Text>Добавьте к вашему заказу</Text>
         </FirstBlock>
         <SecondBlock>
-          <PhotoBlock />
+          {addList.map((item, index) => {
+            console.log(getAdPhoto(index + 1));
+            return (
+              <ItemBlock key={index}>
+                <ItemPhoto
+                  style={{ backgroundImage: `url(${getAdPhoto(index + 1)})` }}
+                />
+                <ItemName>{item.name}</ItemName>
+                <ItemPrice>{item.price} руб.</ItemPrice>
+              </ItemBlock>
+            );
+          })}
         </SecondBlock>
       </AdContainer>
     </AdWrapper>

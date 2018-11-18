@@ -13,14 +13,12 @@ const UserBlockWrapper = styled.div`
   justify-content: center;
   width: 100%;
   height: 87px;
-  border: 1px solid blue;
 `;
 
 const UserBlockNav = styled.div`
   display: flex;
   justify-content: space-between;
   width: 1170px;
-  border: 1px solid red;
 `;
 
 const FirstBlock = styled.div`
@@ -79,12 +77,13 @@ const BasketIcon = styled.div`
 const UserName = styled.p`
     font-size: 14px;
     font-family: "Roboto";
+    margin-left:10px;
     color: rgb(0, 0, 0);
     line-height: 1.2;
 `
 
 
-export default () => {
+export default ({userName,numberOfItems}) => {
   return (
     <UserBlockWrapper>
       <UserBlockNav>
@@ -95,11 +94,11 @@ export default () => {
         <SecondBlock>
           <UserInfoWrapper>
             <UserIcon />
-            <UserName >Анастасия*</UserName>
+            <UserName >{userName}</UserName>
           </UserInfoWrapper>
           <UserItemsWrapper>
             <BasketIcon />
-            <NumberItems />
+            <NumberItems numberOfItems={numberOfItems}/>
           </UserItemsWrapper>
         </SecondBlock>
       </UserBlockNav>
