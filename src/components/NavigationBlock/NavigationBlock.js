@@ -10,20 +10,20 @@ export default () => {
           <ul className="main-menu-list">
             <li className="menu-list main-menu-list__clothes">
               <ul className="menu-list-add-open">
-                <Link to='/clothes' className="main-menu-list__link main-menu-list__link-clothes">
+                <Link to='/clothes' style={{ textDecoration: 'none' }} className="main-menu-list__link main-menu-list__link-clothes">
                   Одежда и аксессуары
                 </Link>
                 <div className="add-menu-container">
                   <div className="add-menu">
                     <ul className="add-menu-list">
                       <li className="menu-list-add add-menu-list__women">
-                        <Link to='/women' className="add-menu-list__link">Женская одежда</Link>
+                        <Link to='/women' style={{ textDecoration: 'none' }} className="add-menu-list__link">Женская одежда</Link>
                       </li>
                       <li className="menu-list-add add-menu-list__men">
-                        <Link to='/men' className="add-menu-list__link">Мужская одежда</Link>
+                        <Link to='/men' style={{ textDecoration: 'none' }} className="add-menu-list__link">Мужская одежда</Link>
                       </li>
                       <li className="menu-list-add add-menu-list__accessories">
-                        <Link to='/accessories' className="add-menu-list__link">Аксессуары</Link>
+                        <Link to='/accessories' style={{ textDecoration: 'none' }} className="add-menu-list__link">Аксессуары</Link>
                       </li>
                     </ul>
                   </div>
@@ -31,19 +31,19 @@ export default () => {
               </ul>
             </li>
             <li className="menu-list main-menu-list__shoes">
-              <Link to='/shoes' className="main-menu-list__link">Обувь</Link>
+              <Link to='/shoes' style={{ textDecoration: 'none' }} className="main-menu-list__link">Обувь</Link>
             </li>
             <li className="menu-list main-menu-list__jewelry">
-              <Link to='/jewellery' className="main-menu-list__link">Украшения</Link>
+              <Link to='/jewellery' style={{ textDecoration: 'none' }} className="main-menu-list__link">Украшения</Link>
             </li>
             <li className="menu-list main-menu-list__health">
-              <Link to='/health' className="main-menu-list__link">Красота и здоровье</Link>
+              <Link to='/health' style={{ textDecoration: 'none' }} className="main-menu-list__link">Красота и здоровье</Link>
             </li>
             <li className="menu-list main-menu-list__for-house">
-              <Link to='/houselold' className="main-menu-list__link">Товары для дома</Link>
+              <Link to='/houselold' style={{ textDecoration: 'none' }} className="main-menu-list__link">Товары для дома</Link>
             </li>
             <li className="menu-list main-menu-list__for-kitchen">
-              <Link to='/kitchen' className="main-menu-list__link">Товары для кухни</Link>
+              <Link to='/kitchen' style={{ textDecoration: 'none' }} className="main-menu-list__link">Товары для кухни</Link>
             </li>
           </ul>
         </div>

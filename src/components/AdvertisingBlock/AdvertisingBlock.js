@@ -1,19 +1,18 @@
 import React from "react";
 import styled from "styled-components";
+import getAdPhoto from "../../scripts/getAdPhoto";
 
 const AdWrapper = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
   height: 520px;
-  border: 1px solid green;
 `;
 const AdContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 1170px;
   height: 100%;
-  border: 1px solid blue;
 `;
 
 const FirstBlock = styled.div``;
@@ -57,9 +56,13 @@ const SecondBlock = styled.div`
   height: 100%;
   border: 1px solid grey;
 `;
-const PhotoBlock = styled.div``;
+const PhotoBlock = styled.div`
+`;
+
+
 
 export default () => {
+    console.log(getAdPhoto(1))
   return (
     <AdWrapper>
       <AdContainer>

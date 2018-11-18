@@ -1,0 +1,229 @@
+
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    border-bottom: 2px solid rgb(217, 217, 217);
+    background-color: #252525;
+  }
+  
+  .footer-contacts{
+    align-self:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 82px;
+    width: 1170px;
+  }
+  
+  .footer-contacts__social{
+    padding: 0;margin: 0;
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    margin-right: 17px;
+  }
+  
+  .footer-contacts__logo{
+    cursor: pointer;
+  }
+  
+  .footer-contacts__logo-vk,
+  .footer-contacts__logo-fb,
+  .footer-contacts__logo-3,
+  .footer-contacts__logo-4,
+  .footer-contacts__logo-5,
+  .footer-contacts__logo-insta,
+  .footer-contacts__logo-youtube
+  {
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 17px;
+    transition: .5s;
+  }
+  
+  .footer-contacts__logo-vk:hover,
+  .footer-contacts__logo-fb:hover,
+  .footer-contacts__logo-3:hover,
+  .footer-contacts__logo-4:hover,
+  .footer-contacts__logo-5:hover,
+  .footer-contacts__logo-insta:hover,
+  .footer-contacts__logo-youtube:hover{
+    filter: invert(25%);
+  }
+  
+  .footer-contacts__logo-vk{
+    background-image: url('img/icon-vk.png');
+  }
+  .footer-contacts__logo-fb{
+    background-image: url('img/icon-fb.png');
+  }
+  .footer-contacts__logo-3{
+    background-image: url('img/icon-class.png');
+  }
+  .footer-contacts__logo-4{
+    background-image: url('img/icon-p.png');
+  }
+  .footer-contacts__logo-5{
+    background-image: url('img/icon-pin.png');
+  }
+  .footer-contacts__logo-insta{
+    background-image: url('img/icon-insta.png');
+  }
+  .footer-contacts__logo-youtube{
+    background-image: url('img/icon-tube.png');
+    margin-right: 0;
+  }
+  
+  .footer-nav-block{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #B3B3B3;  
+    border-bottom: 1px solid #B3B3B3;   
+    width: 100%;
+    height: 362px;
+  }
+  
+  .footer-container-contacts{
+    width: 245px;
+    padding: 0;
+  }
+  
+  .footer-container{
+    width: 180px;
+    padding: 0;
+  }
+  
+  .info-container{
+    width: 145px;
+  }
+  
+  .footer-menu__logo{
+    background-image: url('img/logo-shop-24.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100px;
+    height: 56px;
+    cursor: pointer;
+  }
+  
+  .footer__list{
+    list-style: none;
+    margin-bottom: 10px;
+  }
+  
+  .footer__main-text{
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+    transition:.5s;
+  }
+  
+  .footer__second-text{
+    font-size: 16px;
+    font-family: "Roboto";
+    color: #CACACA;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+    transition:.5s;
+  }
+  
+  .footer__main-text:hover{text-decoration: none; color: #FE6C00;}
+  .footer__second-text:hover{text-decoration: none; color: #FE6C00;}
+  .footer__main-text:active{text-decoration: none; color: rgb(255, 255, 255);}
+  .footer__second-text:active{text-decoration: none; color: rgb(255, 255, 255);}
+  
+  .footer__number-text{
+    font-size: 29px;
+    font-family: "Roboto";
+    color: rgb(243, 243, 243);
+    line-height: 1.2;
+    margin: 0;padding: 0;
+  }
+  
+  .footer__under-text{
+    font-size: 13px;
+    font-family: "Roboto";
+    color: rgb(243, 243, 243);
+    line-height: 1.2;
+    margin: 0;padding: 0;
+  }
+  
+  .contacts-list,
+  .catalog-container,
+  .offer-container,
+  .shop24-container,
+  .info-container{
+    flex-direction: column;
+  }
+  
+  .footer-info{
+    align-self:center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+  }
+  .footer-info__paragraph{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    font-family: "Roboto";
+    color: rgb(202, 202, 202);
+    line-height: 1.2;  
+    text-align: center;
+  }
+  
+  .footer-contacts{
+    align-self:center;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    height: 82px;
+    width: 1170px;
+  }
+  
+  .footer-contacts__social{
+    padding: 0;margin: 0;
+    margin-right: 11px;
+  }
+  
+  .footer-menu{
+    align-self:center;
+    display: flex;
+    justify-content: space-between;
+    padding-top:36px;
+    width: 1170px;
+  }
+  
+  .contacts-list,
+  .catalog-container,
+  .offer-container,
+  .shop24-container,
+  .info-container{
+    flex-direction: column;
+  }
+  
+  .info-container{
+    margin-right: 0;
+  }
+  
+  .footer-info{
+    align-self:center;
+    display: flex;
+    justify-content: center;
+    width: 1170px;  
+  }
+  .footer-info__paragraph{
+    width: 470px;
+    text-align: center;
+  }
