@@ -21,3 +21,11 @@ export const decrementItem = (array,id,numberOfItems) => {
       payload: changeNumberOfItems(array,id,null,'delete')
     };
   };  
+
+
+export const checkDiscount = (value,code) => {
+  return {
+    type: "CHECK_DISCOUNT",
+    payload:value===code
+  };
+}; 

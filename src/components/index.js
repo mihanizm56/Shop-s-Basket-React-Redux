@@ -17,7 +17,7 @@ const MainWrapper = styled.div`
   align-items: center;
 `;
 
-const BasketPage = ({adItems,userName,userItems,increment,decrement, deleteItem,promocode,discount}) => {
+const BasketPage = ({ adItems, userName, userItems, increment, decrement, deleteItem, promocode, discount, discountValue, checkDiscount}) => {
     return (
       <MainWrapper>
         <Header />
@@ -30,6 +30,8 @@ const BasketPage = ({adItems,userName,userItems,increment,decrement, deleteItem,
           deleteItem = {deleteItem} 
           promocode={promocode} 
           discount={discount}
+          checkDiscount={checkDiscount}
+          discountValue={discountValue}
         />
         <AdvertisingBlock addList = {adItems}/>
         <Footer /> 

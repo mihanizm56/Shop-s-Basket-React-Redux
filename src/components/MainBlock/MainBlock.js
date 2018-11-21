@@ -179,7 +179,7 @@ const DeleteIcon = styled.div`
   cursor: pointer;
 `;
 
-export default ({ userItems, increment, decrement, deleteItem, promocode,discount}) => {
+export default ({ userItems, increment, decrement, deleteItem, promocode, discount, checkDiscount, discountValue}) => {
   //console.log(promocode);
   return (
     <MainBlockWrapper>
@@ -224,7 +224,7 @@ export default ({ userItems, increment, decrement, deleteItem, promocode,discoun
           );
         })}
       </ItemWrapper>
-      <DiscountWrapper promocode={promocode} userItems={userItems} discount={discount}/>
+      <DiscountWrapper promocode={promocode} userItems={userItems} discount={discount} discountValue={discountValue} checkDiscount={checkDiscount} />
     </MainBlockWrapper>
   );
 };

@@ -3,6 +3,7 @@ const initialState = {
   userName:'Анастасия',
   promocode:'123',
   discount:false,
+  discountValue:1800,
   adItems: [
     {
       img: 1,
@@ -72,14 +73,17 @@ const initialState = {
 export const rootReducer = (state = initialState, action) => {
     switch (action.type) {
       case "INCREMENT_ITEM":
-        console.log('check INCREMENT_ITEM')
-        return { ...state,userItems: action.payload};
+        console.log("check INCREMENT_ITEM");
+        return { ...state, userItems: action.payload };
       case "DECREMENT_ITEM":
-        console.log('check DECREMENT_ITEM')
-        return { ...state,userItems: action.payload};
+        console.log("check DECREMENT_ITEM");
+        return { ...state, userItems: action.payload };
       case "DELETE_ITEM":
-        console.log('check DELETE_ITEM')
-        return { ...state,userItems: action.payload};
+        console.log("check DELETE_ITEM");
+        return { ...state, userItems: action.payload };
+      case "CHECK_DISCOUNT":
+        console.log("check CHECK_DISCOUNT");
+        return { ...state, discount: action.payload};
 
       default:
         return state;
