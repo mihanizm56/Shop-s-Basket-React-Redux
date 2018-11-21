@@ -1,5 +1,8 @@
+
 const initialState = {
   userName:'Анастасия',
+  promocode:'123',
+  discount:false,
   adItems: [
     {
       img: 1,
@@ -29,8 +32,9 @@ const initialState = {
       code: "82039-11",
       size: "44",
       color: "синий",
-      price: "2450",
-      numberOfItems: 1
+      price: 2450,
+      numberOfItems: 1,
+      id:1
     },
     {
       img: "./img/img2.png",
@@ -38,8 +42,9 @@ const initialState = {
       code: "13524-01",
       size: "38",
       color: "черный",
-      price: "2450",
-      numberOfItems: 1
+      price: 2450,
+      numberOfItems: 1,
+      id:2
     },
     {
       img: "./img/img3.png",
@@ -47,8 +52,9 @@ const initialState = {
       code: "75039",
       size: "44",
       color: "белый",
-      price: "2450",
-      numberOfItems: 1
+      price: 2450,
+      numberOfItems: 1,
+      id:3
     },
     {
       img: "./img/img4.png",
@@ -56,20 +62,25 @@ const initialState = {
       code: "75039",
       size: "46",
       color: "белый",
-      price: "2450",
-      numberOfItems: 1
+      price: 2450,
+      numberOfItems: 1,
+      id:4
     }
   ]
 };
 
 export const rootReducer = (state = initialState, action) => {
     switch (action.type) {
-      case "INCREMENT_NUMBER":
-        return { ...state, number: action.payload };
-      case "DECREMENT_NUMBER":
-        return { ...state, number: action.payload };
-      case "MULTIPLE_NUMBER":
-        return { ...state, number: action.payload };
+      case "INCREMENT_ITEM":
+        console.log('check INCREMENT_ITEM')
+        return { ...state,userItems: action.payload};
+      case "DECREMENT_ITEM":
+        console.log('check DECREMENT_ITEM')
+        return { ...state,userItems: action.payload};
+      case "DELETE_ITEM":
+        console.log('check DELETE_ITEM')
+        return { ...state,userItems: action.payload};
+
       default:
         return state;
     }

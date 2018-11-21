@@ -14,10 +14,10 @@ import thirdItemPhoto from '../components/MainBlock/Items/img/item3.png'
         case 2: return secondPhoto
         case 3: return thirdPhoto
         case 4: return fourthPhoto
-        case '75039': return firstItemPhoto
-        case '82039-11': return secondItemPhoto
-        case '13524-01': return thirdItemPhoto
-
+        case '13524-01': return secondItemPhoto
+        case '82039-11': return firstItemPhoto
+        case '75039': return thirdItemPhoto
+        
         default:
             return 'pictureIsNotFound';
     }

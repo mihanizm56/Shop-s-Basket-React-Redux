@@ -88,7 +88,6 @@ const ItemPrice = styled.div`
 `;
 
 export default ({ addList }) => {
-  console.log(addList);
   return (
     <AdWrapper>
       <AdContainer>
@@ -97,7 +96,6 @@ export default ({ addList }) => {
         </FirstBlock>
         <SecondBlock>
           {addList.map((item, index) => {
-            console.log(getAdPhoto(index + 1));
             return (
               <ItemBlock key={index}>
                 <ItemPhoto

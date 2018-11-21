@@ -8,6 +8,8 @@ import MainBlock from "./MainBlock/MainBlock";
 import AdvertisingBlock from "./AdvertisingBlock/AdvertisingBlock";
 import Footer from "./Footer/Footer";
 
+import getNumberOfItems from '../scripts/getNumberOfItems'
+
 const MainWrapper = styled.div`
   display: flex;
   flex-direction: column;
@@ -15,13 +17,20 @@ const MainWrapper = styled.div`
   align-items: center;
 `;
 
-const BasketPage = ({adItems,userName,userItems}) => {
+const BasketPage = ({adItems,userName,userItems,increment,decrement, deleteItem,promocode,discount}) => {
     return (
       <MainWrapper>
         <Header />
-        <UserBlock userName = {userName} numberOfItems={userItems.length}/>
+        <UserBlock userName = {userName} numberOfItems={getNumberOfItems(userItems)}/>
         <NavigationBlock />
-        <MainBlock userItems={userItems}/>
+        <MainBlock 
+          userItems={userItems} 
+          increment={increment} 
+          decrement={decrement} 
+          deleteItem = {deleteItem} 
+          promocode={promocode} 
+          discount={discount}
+        />
         <AdvertisingBlock addList = {adItems}/>
         <Footer /> 
       </MainWrapper>

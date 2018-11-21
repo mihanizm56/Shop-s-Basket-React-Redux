@@ -1,6 +1,12 @@
 import React from "react";
 import styled from "styled-components";
+
+import DiscountWrapper from './Items/DiscountWrapper'
+
 import getAdPhoto from "../../scripts/getAdPhoto";
+import EditNumber from "./Items/EditNumber";
+
+import crossIcon from "./Items/img/remove.png";
 
 const MainTitle = styled.h2`
   align-self: center;
@@ -42,6 +48,7 @@ const MainBlockWrapper = styled.div`
 
 const TableTitles = styled.div`
   display: flex;
+  margin-bottom: 44px;
 `;
 
 const FirstBlock = styled.div`
@@ -103,19 +110,77 @@ const TitleNameDelete = styled.p`
 `;
 
 const ItemWrapper = styled.div``;
-const ItemContainer = styled.div``;
-const ItemPhoto = styled.div``;
-const DescriptionWrapper = styled.div``;
-const ItemName = styled.p``;
-const ItemCode = styled.p``;
-const ItemSize = styled.p``;
-const ItemColor = styled.p``
-const EditNumber = styled.p``;
-const ItemPrice = styled.p``;
-const DeleteIcon = styled.div``;
 
-export default ({ userItems }) => {
-  console.log(userItems);
+const ItemContainer = styled.div`
+  height: 176px;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 35px;
+`;
+
+const ItemPhoto = styled.div`
+  height: 178px;
+  width: 178px;
+  margin-right: 15px;
+  background-size: contain;
+  background-repeat: no-repeat;
+`;
+
+const DescriptionWrapper = styled.div`
+  width: 211px;
+  margin-right: 173px;
+`;
+
+const ItemName = styled.p`
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-size: 15px;
+  width: 211px;
+`;
+
+const ItemCode = styled.p`
+  margin: 13px 0 0 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-size: 14px;
+  color: #808080;
+`;
+
+const ItemSize = styled.p`
+  margin: 15px 0 0 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-size: 15px;
+`;
+
+const ItemColor = styled.p`
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+  font-size: 15px;
+`;
+
+const ItemPrice = styled.p`
+  display: flex;
+  justify-content: center;
+  width: 76px;
+  height: 25px;
+  padding: 0;
+  margin-top: 0;
+  margin-right: 213px;
+`;
+
+const DeleteIcon = styled.div`
+  width: 18px;
+  height: 18px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+`;
+
+export default ({ userItems, increment, decrement, deleteItem, promocode,discount}) => {
+  //console.log(promocode);
   return (
     <MainBlockWrapper>
       <MainTitle>Ваша корзина</MainTitle>
@@ -133,21 +198,33 @@ export default ({ userItems }) => {
       <ItemWrapper>
         {userItems.map(item => {
           return (
-            <ItemContainer>
-              <ItemPhoto />
+            <ItemContainer key={item.id}>
+              <ItemPhoto
+                style={{ backgroundImage: `url(${getAdPhoto(item.code)})` }}
+              />
               <DescriptionWrapper>
                 <ItemName>{item.description}</ItemName>
-                <ItemCode>{item.code}</ItemCode>
-                <ItemSize>{item.size}</ItemSize>
-                <ItemColor>{item.color}</ItemColor>
+                <ItemCode>Код: {item.code}</ItemCode>
+                <ItemSize>Размер: {item.size}</ItemSize>
+                <ItemColor>Цвет: {item.color}</ItemColor>
               </DescriptionWrapper>
-              <EditNumber number={item.numberOfItems} />
+              <EditNumber
+                userItems={userItems}
+                id={item.id}
+                numberOfItems={item.numberOfItems}
+                increment={increment}
+                decrement={decrement}
+              />
               <ItemPrice>{item.price} руб.</ItemPrice>
-              <DeleteIcon />
+              <DeleteIcon
+                style={{ backgroundImage: `url(${crossIcon})` }}
+                onClick={() => deleteItem(userItems, item.id)}
+              />
             </ItemContainer>
           );
         })}
       </ItemWrapper>
+      <DiscountWrapper promocode={promocode} userItems={userItems} discount={discount}/>
     </MainBlockWrapper>
   );
 };

@@ -1,0 +1,115 @@
+.promo-wrapper{
+    display: flex;
+    justify-content: space-between;
+    height: 251px;
+    border-top: 1px solid grey;
+  }
+  
+  .promo-enter{
+    flex-direction: column;
+  }
+  
+  .promo-enter__title{
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;  
+    margin-top: 30px;
+  }
+  
+  .input-block{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .input-block__input{
+    width: 280px;
+    height: 49px;
+    border: 1px solid rgb(218, 218, 218);
+    background-color: rgb(255, 255, 255);  
+    padding-left: 10px;
+  }
+  
+  .input-block__button,
+  .input-block__button--active{
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    line-height: 1.2;  
+    width: 178px;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    margin-left: 21px;
+    transition: .5s;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .input-block__button{
+    background-color: rgb(183, 183, 183);
+  }
+  
+  .input-block__button--active{
+    background-color: #FF6D00;
+  }
+  
+  .sum-display{
+    display: flex;
+    justify-content: space-around;
+    width: 356px;  
+    margin-top: 30px;
+  }
+  
+  .first-text-block,.second-text-block{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .first-text-block-text,
+  .second-text-block-text
+  {
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgb(0, 0, 0);
+    line-height: 1.2;
+  }
+  
+  .second-text-block__promo-value,
+  .first-text-block__promo-text{
+    opacity: 0;
+    transition: .5s;
+  }
+  
+  .first-text-block__promo-text,
+  .second-text-block__promo-value 
+  {
+    color: #FF6C00;
+  }
+  
+  .first-text-block__sum-text,
+  .second-text-block__sum-value{
+    padding-bottom: 9px;
+  }
+  
+  .check-sum__button{
+    font-size: 16px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    background-color: rgb(255, 108, 0);
+    line-height: 1.2;  
+    width: 178px;
+    height: 45px;
+    border: none;
+    border-radius: 20px;
+    transition: .5s;
+    margin-left: 178px;
+    margin-top: 32px;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .first-text-block__promo-text,
+  .second-text-block__promo-value{
+    padding-bottom: 34px;
+  }
