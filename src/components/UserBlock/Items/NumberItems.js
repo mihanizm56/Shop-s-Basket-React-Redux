@@ -14,7 +14,7 @@ const NumberItems = styled.p`
 export default ({numberOfItems}) => {
   return (
     <NumberItems>
-      В корзине: <b>{numberOfItems > 4 ? numberOfItems+' товаров' : numberOfItems+' товара'}</b>
+      В корзине: <b>{(numberOfItems > 4 || numberOfItems === 0) ? numberOfItems+' товаров' : numberOfItems+' товара'}</b>
     </NumberItems>
   );
 };

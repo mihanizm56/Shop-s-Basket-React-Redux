@@ -1,11 +1,9 @@
 import React from "react";
 import "./DiscountWrapper.css";
 
-import CheckSum from "../../../scripts/checkSumOfItems";
+import CheckSum from "../../../modules/checkSumOfItems";
 
 export default ({ promocode, userItems, discount, checkDiscount, discountValue }) => {
-  console.log(`discount = ${discount}`)
-  console.log(`promocode = ${promocode}`)
   let textInput = React.createRef();
   return (
     <div className="promo-wrapper">

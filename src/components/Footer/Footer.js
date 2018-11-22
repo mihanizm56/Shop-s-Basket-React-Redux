@@ -1,4 +1,5 @@
-import React, { Component } from "react";
+import React from "react";
+import { Link } from 'react-router-dom'
 import './Footer.css'
 
 export default () => {
@@ -16,46 +17,46 @@ export default () => {
           </div>
           <div className='footer-nav-block'>
             <div className="footer-menu">
-              <a className="footer-menu__logo">.</a>
+              <Link to='/main' className="footer-menu__logo"></Link>
               <ul className="footer-container-contacts contacts-list">
                 <li className="footer__list contacts-list__number-1"><p className="footer__number-text">8 (800) 500-75-55<sup>*</sup></p></li>
                 <li className="footer__list contacts-list__text-under"><p className="footer__under-text"><sup>*</sup>Бесплатный звонок по всей России</p></li>
                 <li className="footer__list contacts-list__number-2"><p className="footer__number-text">8 (495) 733-96-03</p></li>
               </ul>
               <ul className="footer-container catalog-container">
-                <li className="footer__list catalog-container__main-paragraph"><a className="footer__main-text">Каталог товаров</a></li>
-                <li className="footer__list catalog-container__clothes"><a className="footer__second-text">Одежда и аксессуары</a></li>
-                <li className="footer__list catalog-container__shoes"><a className="footer__second-text">Обувь</a></li>
-                <li className="footer__list catalog-container__jewelry"><a className="footer__second-text">Украшения</a></li>
-                <li className="footer__list catalog-container__health"><a className="footer__second-text">Красота и здоровье</a></li>
-                <li className="footer__list catalog-container__for-house"><a className="footer__second-text">Товары для дома, дачи и отдыха</a></li>
-                <li className="footer__list catalog-container__for-kitchen"><a className="footer__second-text">Товары для кухни</a></li>
+                <li className="footer__list catalog-container__main-paragraph"><Link to='/catalog' className="footer__main-text">Каталог товаров</Link></li>
+                <li className="footer__list catalog-container__clothes"><Link to='/clothes' className="footer__second-text">Одежда и аксессуары</Link></li>
+                <li className="footer__list catalog-container__shoes"><Link to='/shoes' className="footer__second-text">Обувь</Link></li>
+                <li className="footer__list catalog-container__jewelry"><Link to='/jewellery' className="footer__second-text">Украшения</Link></li>
+                <li className="footer__list catalog-container__health"><Link to='/health' className="footer__second-text">Красота и здоровье</Link></li>
+                <li className="footer__list catalog-container__for-house"><Link to='/household' className="footer__second-text">Товары для дома, дачи и отдыха</Link></li>
+                <li className="footer__list catalog-container__for-kitchen"><Link to='/kitchen' className="footer__second-text">Товары для кухни</Link></li>
               </ul>
               <ul className="footer-container offer-container">
-                <li className="footer__list offer-container__main-paragraph"><a className="footer__main-text">Заказ</a></li>
-                <li className="footer__list offer-container__pay"><a className="footer__second-text">Оплата и доставка</a></li>
-                <li className="footer__list offer-container__return"><a className="footer__second-text">Возврат</a></li>
-                <li className="footer__list offer-container__help"><a className="footer__second-text">Помощь</a></li>
-                <li className="footer__list offer-container__charity"><a className="footer__second-text">Благотворительный Фонд Константина Хабенского</a></li>
-                <li className="footer__list offer-container__warranty"><a className="footer__second-text">Гарантия на дополнительное обслуживание товара</a></li>
-                <li className="footer__list offer-container__agreement"><a className="footer__second-text">Пользовательское соглашение</a></li>
+                <li className="footer__list offer-container__main-paragraph"><Link to='/offer' className="footer__main-text">Заказ</Link></li>
+                <li className="footer__list offer-container__pay"><Link to='/trnsfer' className="footer__second-text">Оплата и доставка</Link></li>
+                <li className="footer__list offer-container__return"><Link to='/return' className="footer__second-text">Возврат</Link></li>
+                <li className="footer__list offer-container__help"><Link to='/help' className="footer__second-text">Помощь</Link></li>
+                <li className="footer__list offer-container__charity"><Link to='/Hab' className="footer__second-text">Благотворительный Фонд Константина Хабенского</Link></li>
+                <li className="footer__list offer-container__warranty"><Link to='/warranty' className="footer__second-text">Гарантия на дополнительное обслуживание товара</Link></li>
+                <li className="footer__list offer-container__agreement"><Link to='/agreement' className="footer__second-text">Пользовательское соглашение</Link></li>
               </ul>
               <ul className="footer-container shop24-container">
-                <li className="footer__list shop24-container__main-paragraph"><a className="footer__main-text">Shop24</a></li>
-                <li className="footer__list shop24-container__live"><a className="footer__second-text">Смотреть прямой эфир</a></li>
-                <li className="footer__list shop24-container__schedule"><a className="footer__second-text">Расписание передач</a></li>
-                <li className="footer__list shop24-container__stock"><a className="footer__second-text">Акции</a></li>
-                <li className="footer__list shop24-container__cabinet"><a className="footer__second-text">Личный кабинет</a></li>
-                <li className="footer__list shop24-container__map"><a className="footer__second-text">Поиск и карта сайта</a></li>
-                <li className="footer__list shop24-container__brands"><a className="footer__second-text">Карта брендов</a></li>
-                <li className="footer__list shop24-container__feedback"><a className="footer__second-text">Обратная связь</a></li>
+                <li className="footer__list shop24-container__main-paragraph"><Link to='/main' className="footer__main-text">Shop24</Link></li>
+                <li className="footer__list shop24-container__live"><Link to='/live' className="footer__second-text">Смотреть прямой эфир</Link></li>
+                <li className="footer__list shop24-container__schedule"><Link to='/schedule' className="footer__second-text">Расписание передач</Link></li>
+                <li className="footer__list shop24-container__stock"><Link to='/discount' className="footer__second-text">Акции</Link></li>
+                <li className="footer__list shop24-container__cabinet"><Link to='/cabinet' className="footer__second-text">Личный кабинет</Link></li>
+                <li className="footer__list shop24-container__map"><Link to='/filter' className="footer__second-text">Поиск и карта сайта</Link></li>
+                <li className="footer__list shop24-container__brands"><Link to='/brands' className="footer__second-text">Карта брендов</Link></li>
+                <li className="footer__list shop24-container__feedback"><Link to='/feedback' className="footer__second-text">Обратная связь</Link></li>
               </ul>
               <ul className="footer-container info-container">
-                <li className="footer__list info-container__main-paragraph"><a className="footer__main-text">Информация</a></li>
-                <li className="footer__list info-container__about-channel"><a className="footer__second-text">О канале</a></li>
-                <li className="footer__list info-container__partnership"><a className="footer__second-text">Сотрудничество</a></li>
-                <li className="footer__list info-container__buy"><a className="footer__second-text">Покупайте с нами!</a></li>
-                <li className="footer__list info-container__contacts"><a className="footer__second-text">Контакты</a></li>
+                <li className="footer__list info-container__main-paragraph"><Link to='/information' className="footer__main-text">Информация</Link></li>
+                <li className="footer__list info-container__about-channel"><Link to='/about' className="footer__second-text">О канале</Link></li>
+                <li className="footer__list info-container__partnership"><Link to='/partnership' className="footer__second-text">Сотрудничество</Link></li>
+                <li className="footer__list info-container__buy"><Link to='/withUs' className="footer__second-text">Покупайте с нами!</Link></li>
+                <li className="footer__list info-container__contacts"><Link to='/contacts' className="footer__second-text">Контакты</Link></li>
               </ul>
             </div>       
           </div>

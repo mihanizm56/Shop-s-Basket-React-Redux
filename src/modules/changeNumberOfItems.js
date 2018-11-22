@@ -15,7 +15,6 @@ export const changeNumberOfItems = (array, id, numberOfItems, parameter) => {
     return newArray;
   }
   if (parameter === "delete") {
-    return newArray.filter(element => element.id != id);
-    //return newArray;
+    return newArray.filter(element => element.id !== id);
   }
 };

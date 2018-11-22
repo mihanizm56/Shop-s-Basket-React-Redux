@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 
 import Header from "./Header/Header";
@@ -8,7 +8,7 @@ import MainBlock from "./MainBlock/MainBlock";
 import AdvertisingBlock from "./AdvertisingBlock/AdvertisingBlock";
 import Footer from "./Footer/Footer";
 
-import getNumberOfItems from '../scripts/getNumberOfItems'
+import getNumberOfItems from '../modules/getNumberOfItems'
 
 const MainWrapper = styled.div`
   display: flex;

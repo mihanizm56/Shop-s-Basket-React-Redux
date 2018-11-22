@@ -4,8 +4,8 @@ import { connect } from "react-redux";
 
 import { incrementItem,decrementItem,deleteItem, checkDiscount } from './components/Actions/actionCreators'
 
-const App = () => {
-  return <BasketPage />;
+const App = (props) => {
+  return <BasketPage {...props}/>;
 };
 
 const mapStateToProps = store => {
@@ -13,7 +13,6 @@ const mapStateToProps = store => {
 };
 
 const mapDispatchToProps = dispatch => {
-  console.log('check mapDispatchToProps')
   return {
     increment(state,id,numberOfItems){
       dispatch(incrementItem(state,id,numberOfItems))
@@ -33,4 +32,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(BasketPage);
+)(App);

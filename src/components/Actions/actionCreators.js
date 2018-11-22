@@ -1,4 +1,4 @@
-import { changeNumberOfItems } from '../../scripts/changeNumberOfItems'
+import { changeNumberOfItems } from '../../modules/changeNumberOfItems'
 
 export const incrementItem = (array,id,numberOfItems) => {
   return {

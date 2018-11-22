@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import DiscountWrapper from './Items/DiscountWrapper'
 
-import getAdPhoto from "../../scripts/getAdPhoto";
+import getAdPhoto from "../../modules/getAdPhoto";
 import EditNumber from "./Items/EditNumber";
 
 import crossIcon from "./Items/img/remove.png";
@@ -180,7 +180,6 @@ const DeleteIcon = styled.div`
 `;
 
 export default ({ userItems, increment, decrement, deleteItem, promocode, discount, checkDiscount, discountValue}) => {
-  //console.log(promocode);
   return (
     <MainBlockWrapper>
       <MainTitle>Ваша корзина</MainTitle>

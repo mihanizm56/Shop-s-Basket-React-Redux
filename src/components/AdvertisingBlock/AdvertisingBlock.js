@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import getAdPhoto from "../../scripts/getAdPhoto";
+import getAdPhoto from "../../modules/getAdPhoto";
 
 const AdWrapper = styled.div`
   display: flex;
