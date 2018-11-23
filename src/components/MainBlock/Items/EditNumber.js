@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const EditWrapper = styled.div`
   display: flex;
@@ -46,7 +47,7 @@ const Minus = styled.div`
   cursor: pointer;
 `;
 
-export default ({ userItems, id, numberOfItems, increment, decrement }) => {
+export const EditNumber = ({ userItems, id, numberOfItems, increment, decrement }) => {
   return (
     <EditWrapper>
       <Minus onClick={() => decrement(userItems, id, numberOfItems)}>-</Minus>
@@ -54,4 +55,21 @@ export default ({ userItems, id, numberOfItems, increment, decrement }) => {
       <Plus onClick={() => increment(userItems, id, numberOfItems)}>+</Plus>
     </EditWrapper>
   );
+};
+
+
+EditNumber.defaultProps = {
+  userItems:[],  
+  id:0,
+  numberOfItems:0, 
+  increment:()=>'', 
+  decrement:()=>'', 
+};
+
+EditNumber.propTypes = {
+  userItems:PropTypes.array.isRequired,  
+  id:PropTypes.number.isRequired,
+  numberOfItems:PropTypes.number.isRequired, 
+  increment:PropTypes.func.isRequired, 
+  decrement:PropTypes.func.isRequired, 
 };

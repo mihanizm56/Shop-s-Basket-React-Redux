@@ -1,10 +1,11 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
-import DiscountWrapper from './Items/DiscountWrapper'
+import { DiscountWrapper } from "./Items/DiscountWrapper";
 
 import getAdPhoto from "../../modules/getAdPhoto";
-import EditNumber from "./Items/EditNumber";
+import { EditNumber } from "./Items/EditNumber";
 
 import crossIcon from "./Items/img/remove.png";
 
@@ -179,7 +180,16 @@ const DeleteIcon = styled.div`
   cursor: pointer;
 `;
 
-export default ({ userItems, increment, decrement, deleteItem, promocode, discount, checkDiscount, discountValue}) => {
+export const MainBlock = ({
+  userItems,
+  increment,
+  decrement,
+  deleteItem,
+  promocode,
+  discount,
+  checkDiscount,
+  discountValue
+}) => {
   return (
     <MainBlockWrapper>
       <MainTitle>Ваша корзина</MainTitle>
@@ -223,7 +233,35 @@ export default ({ userItems, increment, decrement, deleteItem, promocode, discou
           );
         })}
       </ItemWrapper>
-      <DiscountWrapper promocode={promocode} userItems={userItems} discount={discount} discountValue={discountValue} checkDiscount={checkDiscount} />
+      <DiscountWrapper
+        promocode={promocode}
+        userItems={userItems}
+        discount={discount}
+        discountValue={discountValue}
+        checkDiscount={checkDiscount}
+      />
     </MainBlockWrapper>
   );
+};
+
+MainBlock.defaultProps = {
+  userItems: [],
+  increment: () => "",
+  decrement: () => "",
+  deleteItem: () => "",
+  promocode: "",
+  discount: false,
+  checkDiscount: () => "",
+  discountValue: 1800
+};
+
+MainBlock.propTypes = {
+  userItems: PropTypes.array.isRequired,
+  increment: PropTypes.func.isRequired,
+  decrement: PropTypes.func.isRequired,
+  deleteItem: PropTypes.func.isRequired,
+  promocode: PropTypes.string.isRequired,
+  discount: PropTypes.bool.isRequired,
+  checkDiscount: PropTypes.func.isRequired,
+  discountValue: PropTypes.number.isRequired
 };

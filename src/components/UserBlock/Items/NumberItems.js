@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 const NumberItems = styled.p`
   width: 65px;
@@ -11,10 +12,20 @@ const NumberItems = styled.p`
   line-height: 1.2;
 `;
 
-export default ({numberOfItems}) => {
+export const NumberOfItems = ({numberOfItems}) => {
   return (
     <NumberItems>
       В корзине: <b>{(numberOfItems > 4 || numberOfItems === 0) ? numberOfItems+' товаров' : numberOfItems+' товара'}</b>
     </NumberItems>
   );
+};
+
+
+
+NumberItems.defaultProps = {
+  numberOfItems:0
+};
+
+NumberItems.propTypes = {
+  numberOfItems:PropTypes.number.isRequired
 };

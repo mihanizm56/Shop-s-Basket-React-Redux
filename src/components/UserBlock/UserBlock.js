@@ -1,8 +1,9 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 
 import FindComponent from "./Items/FindComponent";
-import NumberItems from "./Items/NumberItems";
+import {NumberOfItems} from "./Items/NumberItems";
 
 import logo from "./Items/img/logo-shop.png";
 import basket from "./Items/img/basket.png";
@@ -83,7 +84,7 @@ const UserName = styled.p`
 `
 
 
-export default ({userName,numberOfItems}) => {
+export const UserBlock = ({userName,numberOfItems}) => {
   return (
     <UserBlockWrapper>
       <UserBlockNav>
@@ -98,10 +99,21 @@ export default ({userName,numberOfItems}) => {
           </UserInfoWrapper>
           <UserItemsWrapper>
             <BasketIcon />
-            <NumberItems numberOfItems={numberOfItems}/>
+            <NumberOfItems numberOfItems={numberOfItems}/>
           </UserItemsWrapper>
         </SecondBlock>
       </UserBlockNav>
     </UserBlockWrapper>
   );
+};
+
+
+UserBlock.defaultProps = {
+  userName:'',
+  numberOfItems:0
+};
+
+UserBlock.propTypes = {
+  userName:PropTypes.string.isRequired,
+  numberOfItems:PropTypes.number.isRequired
 };

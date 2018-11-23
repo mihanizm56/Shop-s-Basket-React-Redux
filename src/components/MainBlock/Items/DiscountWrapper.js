@@ -1,9 +1,10 @@
 import React from "react";
 import "./DiscountWrapper.css";
+import PropTypes from "prop-types";
 
 import CheckSum from "../../../modules/checkSumOfItems";
 
-export default ({ promocode, userItems, discount, checkDiscount, discountValue }) => {
+export const DiscountWrapper = ({ promocode, userItems, discount, checkDiscount, discountValue }) => {
   let textInput = React.createRef();
   return (
     <div className="promo-wrapper">
@@ -53,3 +54,19 @@ export default ({ promocode, userItems, discount, checkDiscount, discountValue }
   );
 };
 
+
+DiscountWrapper.defaultProps = {
+  promocode:'111', 
+  userItems:[],  
+  discount:false, 
+  checkDiscount:()=>'', 
+  discountValue:0, 
+};
+
+DiscountWrapper.propTypes = {
+  promocode:PropTypes.string.isRequired, 
+  userItems:PropTypes.array.isRequired,  
+  discount:PropTypes.bool.isRequired, 
+  checkDiscount:PropTypes.func.isRequired, 
+  discountValue:PropTypes.number.isRequired, 
+};

@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import PropTypes from "prop-types";
 import getAdPhoto from "../../modules/getAdPhoto";
 
 const AdWrapper = styled.div`
@@ -87,7 +88,7 @@ const ItemPrice = styled.div`
   padding: 0;
 `;
 
-export default ({ addList }) => {
+export const AdvertisingBlock = ({ addList }) => {
   return (
     <AdWrapper>
       <AdContainer>
@@ -110,4 +111,12 @@ export default ({ addList }) => {
       </AdContainer>
     </AdWrapper>
   );
+};
+
+AdvertisingBlock.defaultProps = {
+  addList:[]
+};
+
+AdvertisingBlock.propTypes = {
+  addList: PropTypes.array.isRequired
 };
