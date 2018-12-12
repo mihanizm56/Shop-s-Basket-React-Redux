@@ -7,7 +7,7 @@ export const Footer = () => {
     <div className="footer-wrapper">
       <div className="footer-contacts">
         <p className="footer-contacts__social">SHOP24 в социальных сетях:</p>
-        <div className="footer-contacts__logo footer-contacts__logo-vk" />
+        <div className='footer-contacts__logo footer-contacts__logo-vk' />
         <div className="footer-contacts__logo footer-contacts__logo-fb" />
         <div className="footer-contacts__logo footer-contacts__logo-3" />
         <div className="footer-contacts__logo footer-contacts__logo-4" />
