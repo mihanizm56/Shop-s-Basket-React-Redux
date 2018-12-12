@@ -1,11 +1,11 @@
 import React from "react";
 import styled from "styled-components";
 
-const Star = styled.div`
-    font-size: 13px;
-    font-family: "Roboto";
-    color: rgb(0, 0, 0);
-    line-height: 1.2;
-`
+const StarDiv = styled.div`
+  font-size: 13px;
+  font-family: "Roboto";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+`;
 
-export default () => <Star >Звёздный блог</Star>
+export const Star = () => <StarDiv>Звёздный блог</StarDiv>;

@@ -9,4 +9,4 @@ const Bignumber = styled.span`
   margin-right:8px;
 `;
 
-export default () => <Bignumber>8 (800) 500-75-55</Bignumber>;
+export const Number = () => <Bignumber>8 (800) 500-75-55</Bignumber>;

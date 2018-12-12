@@ -35,6 +35,7 @@ const ZoomIcon = styled.div`
   background-image: url(${zoom});
   background-size: contain;
   background-repeat: no-repeat;
+  cursor:pointer;
 `;
 
 export const FindComponent = () => {
