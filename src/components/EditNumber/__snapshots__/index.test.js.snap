@@ -1,8 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`EditNumber Check render props 1`] = `
+exports[`EditNumber Renders correct 1`] = `
 <styled.div>
   <styled.div
+    className="decrementFunc"
     onClick={[Function]}
   >
     -
@@ -11,24 +12,7 @@ exports[`EditNumber Check render props 1`] = `
     4
   </styled.p>
   <styled.div
-    onClick={[Function]}
-  >
-    +
-  </styled.div>
-</styled.div>
-`;
-
-exports[`EditNumber Renders correct 1`] = `
-<styled.div>
-  <styled.div
-    onClick={[Function]}
-  >
-    -
-  </styled.div>
-  <styled.p>
-    0
-  </styled.p>
-  <styled.div
+    className="incrementFunc"
     onClick={[Function]}
   >
     +

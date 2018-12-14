@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Number Renders correct 1`] = `
+<styled.span>
+  8 (800) 500-75-55
+</styled.span>
+`;

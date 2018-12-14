@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Youtube Renders correct 1`] = `
+<styled.div>
+  Смотрите нас на YouTube
+</styled.div>
+`;

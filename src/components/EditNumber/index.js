@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
+import React from "react"
+import styled from "styled-components"
+import PropTypes from "prop-types"
 
 const EditWrapper = styled.div`
   display: flex;
@@ -8,7 +8,7 @@ const EditWrapper = styled.div`
   width: 86px;
   height: 13px;
   margin-right: 174px;
-`;
+`
 
 const Plus = styled.div`
   display: flex;
@@ -20,7 +20,7 @@ const Plus = styled.div`
   margin-right: 10px;
   line-height: 1.2;
   cursor: pointer;
-`;
+`
 
 const NumberOfItems = styled.p`
   display: flex;
@@ -33,7 +33,7 @@ const NumberOfItems = styled.p`
   text-align: center;
   margin: 0;
   padding: 0;
-`;
+`
 
 const Minus = styled.div`
   display: flex;
@@ -45,31 +45,46 @@ const Minus = styled.div`
   margin-left: 10px;
   line-height: 1.2;
   cursor: pointer;
-`;
+`
 
-export const EditNumber = ({ userItems, id, numberOfItems, increment, decrement }) => {
+export const EditNumber = ({
+  userItems,
+  id,
+  numberOfItems,
+  increment,
+  decrement,
+}) => {
   return (
     <EditWrapper>
-      <Minus onClick={() => decrement(userItems, id, numberOfItems)}>-</Minus>
+      <Minus
+        className="decrementFunc"
+        onClick={() => decrement(userItems, id, numberOfItems)}
+      >
+        -
+      </Minus>
       <NumberOfItems>{numberOfItems}</NumberOfItems>
-      <Plus onClick={() => increment(userItems, id, numberOfItems)}>+</Plus>
+      <Plus
+        className="incrementFunc"
+        onClick={() => increment(userItems, id, numberOfItems)}
+      >
+        +
+      </Plus>
     </EditWrapper>
-  );
-};
-
+  )
+}
 
 EditNumber.defaultProps = {
-  userItems:[],  
-  id:0,
-  numberOfItems:0, 
-  increment:()=>'', 
-  decrement:()=>'', 
-};
+  userItems: [],
+  id: 0,
+  numberOfItems: 0,
+  increment: () => "test_increment",
+  decrement: () => "test_decrement",
+}
 
 EditNumber.propTypes = {
-  userItems:PropTypes.array.isRequired,  
-  id:PropTypes.number.isRequired,
-  numberOfItems:PropTypes.number.isRequired, 
-  increment:PropTypes.func.isRequired, 
-  decrement:PropTypes.func.isRequired, 
-};
+  userItems: PropTypes.array.isRequired,
+  id: PropTypes.number.isRequired,
+  numberOfItems: PropTypes.number.isRequired,
+  increment: PropTypes.func.isRequired,
+  decrement: PropTypes.func.isRequired,
+}

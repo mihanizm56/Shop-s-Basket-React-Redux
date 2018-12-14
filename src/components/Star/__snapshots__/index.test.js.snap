@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Star Renders correct 1`] = `
+<styled.div>
+  Звёздный блог
+</styled.div>
+`;
