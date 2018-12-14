@@ -1,10 +1,10 @@
-import firstPhoto from "./img/good-1.png"
-import secondPhoto from "./img/good-2.png"
-import thirdPhoto from "./img/good-3.png"
-import fourthPhoto from "./img/good-4.png"
-import firstItemPhoto from "./img/item1.png"
-import secondItemPhoto from "./img/item2.png"
-import thirdItemPhoto from "./img/item3.png"
+// import firstPhoto from "./img/good-1.png"
+// import secondPhoto from "./img/good-2.png"
+// import thirdPhoto from "./img/good-3.png"
+// import fourthPhoto from "./img/good-4.png"
+// import firstItemPhoto from "./img/item1.png"
+// import secondItemPhoto from "./img/item2.png"
+// import thirdItemPhoto from "./img/item3.png"
 
 import {
   changeNumberOfItems,
