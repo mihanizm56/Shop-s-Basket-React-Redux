@@ -8,9 +8,9 @@
 
 import {
   changeNumberOfItems,
-  checkSumOfItems,
-  getAdPhoto,
-  getNumberOfItems,
+  //   checkSumOfItems,
+  //   getAdPhoto,
+  //   getNumberOfItems,
 } from "./index"
 
 describe.only("changeNumberOfItems", () => {
