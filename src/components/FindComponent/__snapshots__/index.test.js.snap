@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditNumber Renders correct 1`] = `
+<styled.div>
+  <styled.input
+    className="findInput"
+    placeholder="Поиск по сайту"
+    type="text"
+  />
+  <styled.div />
+</styled.div>
+`;

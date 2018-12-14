@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import zoom from "./img/zoom.png";
+import React from "react"
+import styled from "styled-components"
+import zoom from "./img/zoom.png"
 
 const FindWrapper = styled.div`
   display: flex;
@@ -8,7 +8,7 @@ const FindWrapper = styled.div`
   width: 226px;
   height: 32px;
   border-bottom: 2px solid #2a2a2a;
-`;
+`
 
 const FindText = styled.input`
   margin-bottom: 2px;
@@ -26,7 +26,7 @@ const FindText = styled.input`
     color: rgb(0, 0, 0);
     line-height: 1.2;
   }
-`;
+`
 
 const ZoomIcon = styled.div`
   width: 19px;
@@ -35,14 +35,18 @@ const ZoomIcon = styled.div`
   background-image: url(${zoom});
   background-size: contain;
   background-repeat: no-repeat;
-  cursor:pointer;
-`;
+  cursor: pointer;
+`
 
 export const FindComponent = () => {
   return (
     <FindWrapper>
-      <FindText type="text" placeholder="Поиск по сайту" />
+      <FindText
+        className="findInput"
+        type="text"
+        placeholder="Поиск по сайту"
+      />
       <ZoomIcon />
     </FindWrapper>
-  );
-};
+  )
+}

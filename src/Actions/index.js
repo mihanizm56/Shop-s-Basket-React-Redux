@@ -1,31 +1,32 @@
-import { changeNumberOfItems } from '../helpers/'
+import { changeNumberOfItems } from "../helpers/"
 
-export const incrementItem = (array,id,numberOfItems) => {
+export const incrementItem = (array, id, numberOfItems) => {
+  console.log(array)
+  console.log(id)
+  console.log(numberOfItems)
   return {
     type: "INCREMENT_ITEM",
-    payload: changeNumberOfItems(array,id,numberOfItems,'increase')
-  };
-};
+    payload: changeNumberOfItems(array, id, numberOfItems, "increase"),
+  }
+}
 
-export const decrementItem = (array,id,numberOfItems) => {
-    return {
-      type: "DECREMENT_ITEM",
-      payload: changeNumberOfItems(array,id,numberOfItems,'decrease')
-    };
-  };
+export const decrementItem = (array, id, numberOfItems) => {
+  return {
+    type: "DECREMENT_ITEM",
+    payload: changeNumberOfItems(array, id, numberOfItems, "decrease"),
+  }
+}
 
+export const deleteItem = (array, id) => {
+  return {
+    type: "DELETE_ITEM",
+    payload: changeNumberOfItems(array, id, null, "delete"),
+  }
+}
 
-  export const deleteItem = (array,id) => {
-    return {
-      type: "DELETE_ITEM",
-      payload: changeNumberOfItems(array,id,null,'delete')
-    };
-  };  
-
-
-export const checkDiscount = (value,code) => {
+export const checkDiscount = (value, code) => {
   return {
     type: "CHECK_DISCOUNT",
-    payload:value===code
-  };
-}; 
+    payload: value === code,
+  }
+}

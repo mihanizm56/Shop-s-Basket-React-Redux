@@ -22,7 +22,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/9</span>
+        <span class='fraction'>0/12</span>
       </div>
       <div class='fl pad1y space-right2'>
         <span class="strong">100% </span>
@@ -37,7 +37,7 @@
       <div class='fl pad1y space-right2'>
         <span class="strong">0% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/9</span>
+        <span class='fraction'>0/12</span>
       </div>
     </div>
   </div>
@@ -73,7 +73,19 @@
 28
 29
 30
-31</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+31
+32
+33</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -89,57 +101,51 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { changeNumberOfItems } from '../helpers/'</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import { changeNumberOfItems } from "../helpers/"</span>
 &nbsp;
-export const incrementItem = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(a</span>rray,id,numberOfItems) =&gt; {</span>
+export const incrementItem = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(a</span>rray, id, numberOfItems) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  console.log(array)</span>
+<span class="cstat-no" title="statement not covered" >  console.log(id)</span>
+<span class="cstat-no" title="statement not covered" >  console.log(numberOfItems)</span>
 <span class="cstat-no" title="statement not covered" >  return {</span>
     type: "INCREMENT_ITEM",
-    payload: changeNumberOfItems(array,id,numberOfItems,'increase')
-  };
-};
+    payload: changeNumberOfItems(array, id, numberOfItems, "increase"),
+  }
+}
 &nbsp;
-export const decrementItem = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(a</span>rray,id,numberOfItems) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    return {</span>
-      type: "DECREMENT_ITEM",
-      payload: changeNumberOfItems(array,id,numberOfItems,'decrease')
-    };
-  };
+export const decrementItem = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(a</span>rray, id, numberOfItems) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  return {</span>
+    type: "DECREMENT_ITEM",
+    payload: changeNumberOfItems(array, id, numberOfItems, "decrease"),
+  }
+}
 &nbsp;
+export const deleteItem = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(a</span>rray, id) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >  return {</span>
+    type: "DELETE_ITEM",
+    payload: changeNumberOfItems(array, id, null, "delete"),
+  }
+}
 &nbsp;
-  export const deleteItem = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(a</span>rray,id) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    return {</span>
-      type: "DELETE_ITEM",
-      payload: changeNumberOfItems(array,id,null,'delete')
-    };
-  };  
-&nbsp;
-&nbsp;
-export const checkDiscount = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(v</span>alue,code) =&gt; {</span>
+export const checkDiscount = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(v</span>alue, code) =&gt; {</span>
 <span class="cstat-no" title="statement not covered" >  return {</span>
     type: "CHECK_DISCOUNT",
-    payload:value===code
-  };
-}; </pre></td></tr>
+    payload: value === code,
+  }
+}
+&nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 15 2018 01:07:43 GMT+0400 (Московское время (зима))
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 15 2018 03:00:21 GMT+0400 (Московское время (зима))
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

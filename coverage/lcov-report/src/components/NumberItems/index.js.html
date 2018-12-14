@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>5/5</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/4</span>
+        <span class='fraction'>4/4</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/1</span>
+        <span class='fraction'>1/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>5/5</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -73,22 +73,11 @@
 28
 29
 30
-31</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+31</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -97,17 +86,28 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">2x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="cstat-no" title="statement not covered" >import React from "react";</span>
-<span class="cstat-no" title="statement not covered" >import styled from "styled-components";</span>
-<span class="cstat-no" title="statement not covered" >import PropTypes from "prop-types";</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
+import styled from "styled-components";
+import PropTypes from "prop-types";
 &nbsp;
-const NumberItems = <span class="cstat-no" title="statement not covered" >styled.p`</span>
+const NumberItems = styled.p`
   width: 65px;
   margin: 0;
   padding: 0;
@@ -117,8 +117,8 @@ const NumberItems = <span class="cstat-no" title="statement not covered" >styled
   line-height: 1.2;
 `;
 &nbsp;
-export const NumberOfItems = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >({</span>numberOfItems}) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
+export const NumberOfItems = ({numberOfItems}) =&gt; {
+  return (
     &lt;NumberItems&gt;
       В корзине: &lt;b&gt;{(numberOfItems &gt; 4 || numberOfItems === 0) ? numberOfItems+' товаров' : numberOfItems+' товара'}&lt;/b&gt;
     &lt;/NumberItems&gt;
@@ -127,11 +127,11 @@ export const NumberOfItems = <span class="cstat-no" title="statement not covered
 &nbsp;
 &nbsp;
 &nbsp;
-<span class="cstat-no" title="statement not covered" >NumberItems.defaultProps = {</span>
+NumberItems.defaultProps = {
   numberOfItems:0
 };
 &nbsp;
-<span class="cstat-no" title="statement not covered" >NumberItems.propTypes = {</span>
+NumberItems.propTypes = {
   numberOfItems:PropTypes.number.isRequired
 };</pre></td></tr>
 </table></pre>
@@ -139,7 +139,7 @@ export const NumberOfItems = <span class="cstat-no" title="statement not covered
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 15 2018 01:07:43 GMT+0400 (Московское время (зима))
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 15 2018 03:00:21 GMT+0400 (Московское время (зима))
 </div>
 </div>
 <script src="..\..\..\prettify.js"></script>
