@@ -1,30 +1,29 @@
-
 const initialState = {
-  userName: 'Анастасия',
-  promocode: '123',
+  userName: "Анастасия",
+  promocode: "123",
   discount: false,
   discountValue: 1800,
   adItems: [
     {
       img: 1,
       name: "Солнечные очки зеленого цвета в стиле ретро",
-      price: "2450"
+      price: "2450",
     },
     {
       img: 2,
       name: "Шляпа",
-      price: "800"
+      price: "800",
     },
     {
       img: 3,
       name: "Платье-миди с расклешенной юбкой",
-      price: "2450"
+      price: "2450",
     },
     {
       img: 4,
       name: "Платье-миди с расклешенной юбкой",
-      price: "2450"
-    }
+      price: "2450",
+    },
   ],
   userItems: [
     {
@@ -35,7 +34,7 @@ const initialState = {
       color: "синий",
       price: 2450,
       numberOfItems: 1,
-      id: 1
+      id: 1,
     },
     {
       img: "./img/img2.png",
@@ -45,7 +44,7 @@ const initialState = {
       color: "черный",
       price: 2450,
       numberOfItems: 1,
-      id: 2
+      id: 2,
     },
     {
       img: "./img/img3.png",
@@ -55,7 +54,7 @@ const initialState = {
       color: "белый",
       price: 2450,
       numberOfItems: 1,
-      id: 3
+      id: 3,
     },
     {
       img: "./img/img4.png",
@@ -65,23 +64,23 @@ const initialState = {
       color: "белый",
       price: 2450,
       numberOfItems: 1,
-      id: 4
-    }
-  ]
-};
+      id: 4,
+    },
+  ],
+}
 
-export const rootReducer = (state = initialState, action) => {
-    switch (action.type) {
-      case "INCREMENT_ITEM":
-        return { ...state, userItems: action.payload };
-      case "DECREMENT_ITEM":
-        return { ...state, userItems: action.payload };
-      case "DELETE_ITEM":
-        return { ...state, userItems: action.payload };
-      case "CHECK_DISCOUNT":
-        return { ...state, discount: action.payload};
+export const rootReducer = (action, state = initialState) => {
+  switch (action.type) {
+    case "INCREMENT_ITEM":
+      return { ...state, userItems: action.payload }
+    case "DECREMENT_ITEM":
+      return { ...state, userItems: action.payload }
+    case "DELETE_ITEM":
+      return { ...state, userItems: action.payload }
+    case "CHECK_DISCOUNT":
+      return { ...state, discount: action.payload }
 
-      default:
-        return state;
-    }
-  };
+    default:
+      return state
+  }
+}

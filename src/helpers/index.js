@@ -1,67 +1,68 @@
-import firstPhoto from "./img/good-1.png";
-import secondPhoto from "./img/good-2.png";
-import thirdPhoto from "./img/good-3.png";
-import fourthPhoto from "./img/good-4.png";
-import firstItemPhoto from "./img/item1.png";
-import secondItemPhoto from "./img/item2.png";
-import thirdItemPhoto from "./img/item3.png";
+import firstPhoto from "./img/good-1.png"
+import secondPhoto from "./img/good-2.png"
+import thirdPhoto from "./img/good-3.png"
+import fourthPhoto from "./img/good-4.png"
+import firstItemPhoto from "./img/item1.png"
+import secondItemPhoto from "./img/item2.png"
+import thirdItemPhoto from "./img/item3.png"
 
 export const changeNumberOfItems = (array, id, numberOfItems, parameter) => {
-  const newArray = [...array];
+  const newArray = [...array]
   if (parameter === "increase") {
     newArray.forEach(element => {
-      if (element.id === id) element.numberOfItems = numberOfItems + 1;
-    });
-    return newArray;
+      if (element.id === id) element.numberOfItems = numberOfItems + 1
+    })
+    return newArray
   }
   if (parameter === "decrease") {
     if (numberOfItems > 1) {
       newArray.forEach(element => {
-        if (element.id === id) element.numberOfItems = numberOfItems - 1;
-      });
+        if (element.id === id) element.numberOfItems = numberOfItems - 1
+      })
     }
-    return newArray;
+    return newArray
   }
   if (parameter === "delete") {
-    return newArray.filter(element => element.id !== id);
+    return newArray.filter(element => element.id !== id)
   }
-};
+
+  return newArray
+}
 
 export const checkSumOfItems = array => {
   let result = 0
   array.forEach(element => {
-    result = result + (element.numberOfItems * element.price)
-  });
+    result = result + element.numberOfItems * element.price
+  })
   return result
 }
 
 export const getAdPhoto = indexOfImg => {
   switch (indexOfImg) {
     case 1:
-      return firstPhoto;
+      return firstPhoto
     case 2:
-      return secondPhoto;
+      return secondPhoto
     case 3:
-      return thirdPhoto;
+      return thirdPhoto
     case 4:
-      return fourthPhoto;
+      return fourthPhoto
     case "13524-01":
-      return secondItemPhoto;
+      return secondItemPhoto
     case "82039-11":
-      return firstItemPhoto;
+      return firstItemPhoto
     case "75039":
-      return thirdItemPhoto;
+      return thirdItemPhoto
 
     default:
-      return "pictureIsNotFound";
+      return "pictureIsNotFound"
   }
-};
-
+}
 
 export const getNumberOfItems = array => {
-  let result = 0;
+  let result = 0
   array.forEach(element => {
-    result += element.numberOfItems;
-  });
-  return result;
-};
+    result += element.numberOfItems
+  })
+  return result
+}

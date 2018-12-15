@@ -1,9 +1,6 @@
 import { changeNumberOfItems } from "../helpers/"
 
 export const incrementItem = (array, id, numberOfItems) => {
-  console.log(array)
-  console.log(id)
-  console.log(numberOfItems)
   return {
     type: "INCREMENT_ITEM",
     payload: changeNumberOfItems(array, id, numberOfItems, "increase"),

@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>8/8</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/6</span>
+        <span class='fraction'>6/6</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/1</span>
+        <span class='fraction'>1/1</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/8</span>
+        <span class='fraction'>8/8</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -129,9 +129,7 @@
 84
 85
 86
-87
-88</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+87</td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -202,48 +200,47 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&nbsp;
-const initialState = <span class="cstat-no" title="statement not covered" >{</span>
-  userName: 'Анастасия',
-  promocode: '123',
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">const initialState = {
+  userName: "Анастасия",
+  promocode: "123",
   discount: false,
   discountValue: 1800,
   adItems: [
     {
       img: 1,
       name: "Солнечные очки зеленого цвета в стиле ретро",
-      price: "2450"
+      price: "2450",
     },
     {
       img: 2,
       name: "Шляпа",
-      price: "800"
+      price: "800",
     },
     {
       img: 3,
       name: "Платье-миди с расклешенной юбкой",
-      price: "2450"
+      price: "2450",
     },
     {
       img: 4,
       name: "Платье-миди с расклешенной юбкой",
-      price: "2450"
-    }
+      price: "2450",
+    },
   ],
   userItems: [
     {
@@ -254,7 +251,7 @@ const initialState = <span class="cstat-no" title="statement not covered" >{</sp
       color: "синий",
       price: 2450,
       numberOfItems: 1,
-      id: 1
+      id: 1,
     },
     {
       img: "./img/img2.png",
@@ -264,7 +261,7 @@ const initialState = <span class="cstat-no" title="statement not covered" >{</sp
       color: "черный",
       price: 2450,
       numberOfItems: 1,
-      id: 2
+      id: 2,
     },
     {
       img: "./img/img3.png",
@@ -274,7 +271,7 @@ const initialState = <span class="cstat-no" title="statement not covered" >{</sp
       color: "белый",
       price: 2450,
       numberOfItems: 1,
-      id: 3
+      id: 3,
     },
     {
       img: "./img/img4.png",
@@ -284,33 +281,33 @@ const initialState = <span class="cstat-no" title="statement not covered" >{</sp
       color: "белый",
       price: 2450,
       numberOfItems: 1,
-      id: 4
-    }
-  ]
-};
+      id: 4,
+    },
+  ],
+}
 &nbsp;
-export const rootReducer = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >(s</span>tate = <span class="branch-0 cbranch-no" title="branch not covered" >initialState, action) =&gt; {</span></span>
-<span class="cstat-no" title="statement not covered" >    switch (action.type) {</span>
-      case "INCREMENT_ITEM":
-<span class="cstat-no" title="statement not covered" >        return { ...state, userItems: action.payload };</span>
-      case "DECREMENT_ITEM":
-<span class="cstat-no" title="statement not covered" >        return { ...state, userItems: action.payload };</span>
-      case "DELETE_ITEM":
-<span class="cstat-no" title="statement not covered" >        return { ...state, userItems: action.payload };</span>
-      case "CHECK_DISCOUNT":
-<span class="cstat-no" title="statement not covered" >        return { ...state, discount: action.payload};</span>
+export const rootReducer = (action, state = initialState) =&gt; {
+  switch (action.type) {
+    case "INCREMENT_ITEM":
+      return { ...state, userItems: action.payload }
+    case "DECREMENT_ITEM":
+      return { ...state, userItems: action.payload }
+    case "DELETE_ITEM":
+      return { ...state, userItems: action.payload }
+    case "CHECK_DISCOUNT":
+      return { ...state, discount: action.payload }
 &nbsp;
-      default:
-<span class="cstat-no" title="statement not covered" >        return state;</span>
-    }
-  };
+    default:
+      return state
+  }
+}
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 15 2018 03:00:21 GMT+0400 (Московское время (зима))
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 15 2018 22:14:44 GMT+0400 (Московское время (зима))
 </div>
 </div>
 <script src="..\..\prettify.js"></script>

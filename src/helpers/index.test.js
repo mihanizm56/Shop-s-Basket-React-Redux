@@ -1,19 +1,19 @@
-// import firstPhoto from "./img/good-1.png"
-// import secondPhoto from "./img/good-2.png"
-// import thirdPhoto from "./img/good-3.png"
-// import fourthPhoto from "./img/good-4.png"
-// import firstItemPhoto from "./img/item1.png"
-// import secondItemPhoto from "./img/item2.png"
-// import thirdItemPhoto from "./img/item3.png"
+import firstPhoto from "./img/good-1.png"
+import secondPhoto from "./img/good-2.png"
+import thirdPhoto from "./img/good-3.png"
+import fourthPhoto from "./img/good-4.png"
+import firstItemPhoto from "./img/item1.png"
+import secondItemPhoto from "./img/item2.png"
+import thirdItemPhoto from "./img/item3.png"
 
 import {
   changeNumberOfItems,
-  //   checkSumOfItems,
-  //   getAdPhoto,
-  //   getNumberOfItems,
+  checkSumOfItems,
+  getAdPhoto,
+  getNumberOfItems,
 } from "./index"
 
-describe.only("changeNumberOfItems", () => {
+describe("changeNumberOfItems", () => {
   const initArray = [
     {
       img: "./img/img1.png",
@@ -160,6 +160,95 @@ describe.only("changeNumberOfItems", () => {
       const result = changeNumberOfItems(increasedArray, id, number, paramenter)
 
       expect(result).toEqual(initArray)
+    })
+
+    it("changeNumberOfItems not decreasing", () => {
+      const id = 2
+      const number = 1
+      const paramenter = "decrease"
+      const result = changeNumberOfItems(initArray, id, number, paramenter)
+
+      expect(result).toEqual(initArray)
+    })
+
+    it("changeNumberOfItems deleting", () => {
+      const filteredArray = initArray.filter(element => element.id !== 4)
+      const result = changeNumberOfItems(
+        increasedArray,
+        4,
+        increasedArray[3].numberOfItems,
+        "delete"
+      )
+
+      expect(result).toEqual(filteredArray)
+    })
+
+    it("changeNumberOfItems without any parameter", () => {
+      const result = changeNumberOfItems(
+        initArray,
+        4,
+        initArray[3].numberOfItems,
+        "random"
+      )
+
+      expect(result).toEqual(initArray)
+    })
+  })
+  describe("checkSumOfItems works", () => {
+    it("checkSumOfItems checks sum", () => {
+      const result = checkSumOfItems(initArray)
+
+      expect(result).toEqual(9800)
+    })
+  })
+
+  describe("getAdPhoto works", () => {
+    it("getAdPhoto gives photo 1", () => {
+      const result = getAdPhoto(1)
+
+      expect(result).toEqual(firstPhoto)
+    })
+    it("getAdPhoto gives photo 2", () => {
+      const result = getAdPhoto(2)
+
+      expect(result).toEqual(secondPhoto)
+    })
+    it("getAdPhoto gives photo 3", () => {
+      const result = getAdPhoto(3)
+
+      expect(result).toEqual(thirdPhoto)
+    })
+    it("getAdPhoto gives photo 4", () => {
+      const result = getAdPhoto(4)
+
+      expect(result).toEqual(fourthPhoto)
+    })
+    it("getAdPhoto gives photo 13524-01", () => {
+      const result = getAdPhoto("13524-01")
+
+      expect(result).toEqual(secondItemPhoto)
+    })
+    it("getAdPhoto gives photo 82039-11", () => {
+      const result = getAdPhoto("82039-11")
+
+      expect(result).toEqual(firstItemPhoto)
+    })
+    it("getAdPhoto gives photo 75039", () => {
+      const result = getAdPhoto("75039")
+
+      expect(result).toEqual(thirdItemPhoto)
+    })
+    it("getAdPhoto gives photo undefined", () => {
+      const result = getAdPhoto(undefined)
+
+      expect(result).toEqual("pictureIsNotFound")
+    })
+  })
+  describe("getNumberOfItems works", () => {
+    it("getNumberOfItems checks sum", () => {
+      const result = getNumberOfItems(initArray)
+
+      expect(result).toEqual(4)
     })
   })
 })
