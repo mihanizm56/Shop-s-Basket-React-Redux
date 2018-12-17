@@ -1,0 +1,180 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavigationBlock test Renders correct 1`] = `
+<div
+  className="nav-menu-wrapper"
+>
+  <div
+    className="main-menu-container"
+  >
+    <div
+      className="main-menu"
+    >
+      <ul
+        className="main-menu-list"
+      >
+        <li
+          className="menu-list main-menu-list__clothes"
+        >
+          <ul
+            className="menu-list-add-open"
+          >
+            <Link
+              className="main-menu-list__link main-menu-list__link-clothes"
+              replace={false}
+              style={
+                Object {
+                  "textDecoration": "none",
+                }
+              }
+              to="/clothes"
+            >
+              Одежда и аксессуары
+            </Link>
+            <div
+              className="add-menu-container"
+            >
+              <div
+                className="add-menu"
+              >
+                <ul
+                  className="add-menu-list"
+                >
+                  <li
+                    className="menu-list-add add-menu-list__women"
+                  >
+                    <Link
+                      className="add-menu-list__link"
+                      replace={false}
+                      style={
+                        Object {
+                          "textDecoration": "none",
+                        }
+                      }
+                      to="/women"
+                    >
+                      Женская одежда
+                    </Link>
+                  </li>
+                  <li
+                    className="menu-list-add add-menu-list__men"
+                  >
+                    <Link
+                      className="add-menu-list__link"
+                      replace={false}
+                      style={
+                        Object {
+                          "textDecoration": "none",
+                        }
+                      }
+                      to="/men"
+                    >
+                      Мужская одежда
+                    </Link>
+                  </li>
+                  <li
+                    className="menu-list-add add-menu-list__accessories"
+                  >
+                    <Link
+                      className="add-menu-list__link"
+                      replace={false}
+                      style={
+                        Object {
+                          "textDecoration": "none",
+                        }
+                      }
+                      to="/accessories"
+                    >
+                      Аксессуары
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </ul>
+        </li>
+        <li
+          className="menu-list main-menu-list__shoes"
+        >
+          <Link
+            className="main-menu-list__link"
+            replace={false}
+            style={
+              Object {
+                "textDecoration": "none",
+              }
+            }
+            to="/shoes"
+          >
+            Обувь
+          </Link>
+        </li>
+        <li
+          className="menu-list main-menu-list__jewelry"
+        >
+          <Link
+            className="main-menu-list__link"
+            replace={false}
+            style={
+              Object {
+                "textDecoration": "none",
+              }
+            }
+            to="/jewellery"
+          >
+            Украшения
+          </Link>
+        </li>
+        <li
+          className="menu-list main-menu-list__health"
+        >
+          <Link
+            className="main-menu-list__link"
+            replace={false}
+            style={
+              Object {
+                "textDecoration": "none",
+              }
+            }
+            to="/health"
+          >
+            Красота и здоровье
+          </Link>
+        </li>
+        <li
+          className="menu-list main-menu-list__for-house"
+        >
+          <Link
+            className="main-menu-list__link"
+            replace={false}
+            style={
+              Object {
+                "textDecoration": "none",
+              }
+            }
+            to="/houselold"
+          >
+            Товары для дома
+          </Link>
+        </li>
+        <li
+          className="menu-list main-menu-list__for-kitchen"
+        >
+          <Link
+            className="main-menu-list__link"
+            replace={false}
+            style={
+              Object {
+                "textDecoration": "none",
+              }
+            }
+            to="/kitchen"
+          >
+            Товары для кухни
+          </Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;

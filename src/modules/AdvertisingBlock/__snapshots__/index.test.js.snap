@@ -1,0 +1,101 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Youtube Renders correct defaultProps 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.div>
+      <styled.h2>
+        Добавьте к вашему заказу
+      </styled.h2>
+    </styled.div>
+    <styled.div>
+      <styled.div
+        key="0"
+      >
+        <styled.div
+          style={
+            Object {
+              "backgroundImage": "url(good-1.png)",
+            }
+          }
+        />
+        <styled.div>
+          test_name
+        </styled.div>
+        <styled.div>
+          test_price
+           руб.
+        </styled.div>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;
+
+exports[`Youtube Renders correct defaultProps 2`] = `
+<styled.div>
+  <styled.div>
+    <styled.div>
+      <styled.h2>
+        Добавьте к вашему заказу
+      </styled.h2>
+    </styled.div>
+    <styled.div>
+      <styled.div
+        key="0"
+      >
+        <styled.div
+          style={
+            Object {
+              "backgroundImage": "url(good-1.png)",
+            }
+          }
+        />
+        <styled.div>
+          test_name_1
+        </styled.div>
+        <styled.div>
+          1234
+           руб.
+        </styled.div>
+      </styled.div>
+      <styled.div
+        key="1"
+      >
+        <styled.div
+          style={
+            Object {
+              "backgroundImage": "url(good-2.png)",
+            }
+          }
+        />
+        <styled.div>
+          test_name_2
+        </styled.div>
+        <styled.div>
+          1234
+           руб.
+        </styled.div>
+      </styled.div>
+      <styled.div
+        key="2"
+      >
+        <styled.div
+          style={
+            Object {
+              "backgroundImage": "url(good-3.png)",
+            }
+          }
+        />
+        <styled.div>
+          test_name_3
+        </styled.div>
+        <styled.div>
+          1234
+           руб.
+        </styled.div>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;
