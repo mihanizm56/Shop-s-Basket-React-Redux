@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AdvertisingBlock testing AdvertisingBlock render array 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.div>
+      <styled.h2>
+        Добавьте к вашему заказу
+      </styled.h2>
+    </styled.div>
+    <styled.div>
+      <styled.div
+        key="0"
+      >
+        <styled.div
+          style={
+            Object {
+              "backgroundImage": "url(good-1.png)",
+            }
+          }
+        />
+        <styled.div>
+          test_1
+        </styled.div>
+        <styled.div>
+          test_rubles
+           руб.
+        </styled.div>
+      </styled.div>
+      <styled.div
+        key="1"
+      >
+        <styled.div
+          style={
+            Object {
+              "backgroundImage": "url(good-2.png)",
+            }
+          }
+        />
+        <styled.div>
+          test_2
+        </styled.div>
+        <styled.div>
+          test_rubles
+           руб.
+        </styled.div>
+      </styled.div>
+      <styled.div
+        key="2"
+      >
+        <styled.div
+          style={
+            Object {
+              "backgroundImage": "url(good-3.png)",
+            }
+          }
+        />
+        <styled.div>
+          test_3
+        </styled.div>
+        <styled.div>
+          test_rubles
+           руб.
+        </styled.div>
+      </styled.div>
+      <styled.div
+        key="3"
+      >
+        <styled.div
+          style={
+            Object {
+              "backgroundImage": "url(good-4.png)",
+            }
+          }
+        />
+        <styled.div>
+          test_4
+        </styled.div>
+        <styled.div>
+          test_rubles
+           руб.
+        </styled.div>
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;
+
+exports[`AdvertisingBlock testing AdvertisingBlock render defaultProps 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.div>
+      <styled.h2>
+        Добавьте к вашему заказу
+      </styled.h2>
+    </styled.div>
+    <styled.div />
+  </styled.div>
+</styled.div>
+`;

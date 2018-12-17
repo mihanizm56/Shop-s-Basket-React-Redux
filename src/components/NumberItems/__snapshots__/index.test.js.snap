@@ -1,16 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`NumberOfItems Renders correct 1`] = `
-<styled.p
-  numberOfItems={0}
->
-  В корзине: 
-  <b>
-    4 товара
-  </b>
-</styled.p>
-`;
-
 exports[`NumberOfItems Renders correct if numberOfItems less than 4 1`] = `
 <styled.p
   numberOfItems={0}
