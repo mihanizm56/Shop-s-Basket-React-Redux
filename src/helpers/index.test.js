@@ -143,6 +143,36 @@ describe("changeNumberOfItems", () => {
     },
   ]
 
+  const testArray = [
+    {
+      code: "82039-11",
+      color: "синий",
+      description: "Платье-миди с расклешенной юбкой",
+      img: "./img/img1.png",
+      numberOfItems: 1,
+      price: 2450,
+      size: "44",
+    },
+    {
+      code: "13524-01",
+      color: "черный",
+      description: "Туфли женские украшенные кружевными вставками",
+      img: "./img/img2.png",
+      numberOfItems: 2,
+      price: 2450,
+      size: "38",
+    },
+    {
+      code: "75039",
+      color: "белый",
+      description: "Платье-миди",
+      img: "./img/img3.png",
+      numberOfItems: 1,
+      price: 2450,
+      size: "44",
+    },
+  ]
+
   describe("changeNumberOfItems works", () => {
     it("changeNumberOfItems incorrect", () => {
       const number = newArray[2].numberOfItems
@@ -165,6 +195,15 @@ describe("changeNumberOfItems", () => {
 
       expect(result).toEqual(increasedArray)
     })
+    /////
+    it("changeNumberOfItems increasing incorrect", () => {
+      const id = 2
+      const number = testArray[id - 1].numberOfItems
+      const paramenter = "increase"
+      const result = changeNumberOfItems(testArray, id, number, paramenter)
+
+      expect(result).toEqual(testArray)
+    })
 
     it("changeNumberOfItems decreasing", () => {
       const id = 2
@@ -173,6 +212,15 @@ describe("changeNumberOfItems", () => {
       const result = changeNumberOfItems(increasedArray, id, number, paramenter)
 
       expect(result).toEqual(initArray)
+    })
+
+    it("changeNumberOfItems decreasing incorrect", () => {
+      const id = 2
+      const number = testArray[id - 1].numberOfItems
+      const paramenter = "decrease"
+      const result = changeNumberOfItems(testArray, id, number, paramenter)
+
+      expect(result).toEqual(testArray)
     })
 
     it("changeNumberOfItems not decreasing", () => {
@@ -212,6 +260,23 @@ describe("changeNumberOfItems", () => {
       const result = checkSumOfItems(initArray)
 
       expect(result).toEqual(9800)
+    })
+  })
+
+  describe("checkSumOfItems works", () => {
+    it("checkSumOfItems with an incorrect array", () => {
+      const incorrectArray = ["1", "2", "3"]
+      const result = checkSumOfItems(incorrectArray)
+
+      expect(result).toEqual(0)
+    })
+  })
+
+  describe("checkSumOfItems works", () => {
+    it("checkSumOfItems with an incorrect array", () => {
+      const result = checkSumOfItems([])
+
+      expect(result).toEqual([])
     })
   })
 
@@ -267,6 +332,20 @@ describe("changeNumberOfItems", () => {
       const result = getNumberOfItems(initArray)
 
       expect(result).toEqual(4)
+    })
+  })
+  describe("getNumberOfItems works", () => {
+    it("getNumberOfItems works with an empty array", () => {
+      const result = getNumberOfItems([])
+
+      expect(result).toEqual(0)
+    })
+  })
+  describe("getNumberOfItems works", () => {
+    it("getNumberOfItems works with an incorrect array", () => {
+      const result = getNumberOfItems([1, 2, 3, 4, 5])
+
+      expect(result).toEqual(0)
     })
   })
 })

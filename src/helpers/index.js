@@ -48,6 +48,7 @@ export const checkSumOfItems = array => {
     })
     return result
   }
+  return array
 }
 
 export const getAdPhoto = indexOfImg => {
@@ -83,4 +84,5 @@ export const getNumberOfItems = array => {
     })
     return result
   }
+  return array.length
 }
