@@ -1,5 +1,6 @@
 import React from "react"
 import styled from "styled-components"
+import PropTypes from "prop-types"
 import {
   AdvertisingBlock,
   MainBlock,
@@ -63,16 +64,20 @@ export const BasketPage = ({
   )
 }
 
-// BasketPage.propTypes = {
+BasketPage.propTypes = {
+  adItems: PropTypes.array.isRequired,
+  userName: PropTypes.string.isRequired,
+  userItems: PropTypes.array.isRequired,
+  promocode: PropTypes.string.isRequired,
+  discount: PropTypes.bool.isRequired,
+  discountValue: PropTypes.number.isRequired,
+}
 
-//   adItems,
-//   userName,
-//   userItems: PropTypes.array.isRequired,
-//   increment: PropTypes.func.isRequired,
-//   decrement: PropTypes.func.isRequired,
-//   deleteItem,
-//   promocode,
-//   discount,
-//   discountValue,
-//   checkDiscount,
-// }
+BasketPage.defaultProps = {
+  adItems: [],
+  userName: "test_string",
+  userItems: [],
+  promocode: "test",
+  discount: false,
+  discountValue: 1800,
+}

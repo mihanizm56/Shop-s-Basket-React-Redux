@@ -8,61 +8,79 @@ import thirdItemPhoto from "./img/item3.png"
 
 export const changeNumberOfItems = (array, id, numberOfItems, parameter) => {
   const newArray = [...array]
-  if (parameter === "increase") {
-    newArray.forEach(element => {
-      if (element.id === id) element.numberOfItems = numberOfItems + 1
-    })
-    return newArray
-  }
-  if (parameter === "decrease") {
-    if (numberOfItems > 1) {
+  if (newArray.length && id) {
+    if (parameter === "increase" && numberOfItems) {
       newArray.forEach(element => {
-        if (element.id === id) element.numberOfItems = numberOfItems - 1
+        if (element.id) {
+          if (element.id === id) element.numberOfItems = numberOfItems + 1
+        }
       })
+
+      return newArray
     }
+    if (parameter === "decrease" && numberOfItems) {
+      if (numberOfItems > 1) {
+        newArray.forEach(element => {
+          if (element.id) {
+            if (element.id === id) element.numberOfItems = numberOfItems - 1
+          }
+        })
+      }
+
+      return newArray
+    }
+    if (parameter === "delete") {
+      return newArray.filter(element => element.id !== id)
+    }
+
     return newArray
-  }
-  if (parameter === "delete") {
-    return newArray.filter(element => element.id !== id)
   }
 
-  return newArray
+  return array
 }
 
 export const checkSumOfItems = array => {
-  let result = 0
-  array.forEach(element => {
-    result = result + element.numberOfItems * element.price
-  })
-  return result
-}
-
-export const getAdPhoto = indexOfImg => {
-  switch (indexOfImg) {
-    case 1:
-      return firstPhoto
-    case 2:
-      return secondPhoto
-    case 3:
-      return thirdPhoto
-    case 4:
-      return fourthPhoto
-    case "13524-01":
-      return secondItemPhoto
-    case "82039-11":
-      return firstItemPhoto
-    case "75039":
-      return thirdItemPhoto
-
-    default:
-      return "pictureIsNotFound"
+  if (array.length) {
+    let result = 0
+    array.forEach(element => {
+      if (element.numberOfItems && element.price)
+        result = result + element.numberOfItems * element.price
+    })
+    return result
   }
 }
 
+export const getAdPhoto = indexOfImg => {
+  if (indexOfImg) {
+    switch (indexOfImg) {
+      case 1:
+        return firstPhoto
+      case 2:
+        return secondPhoto
+      case 3:
+        return thirdPhoto
+      case 4:
+        return fourthPhoto
+      case "13524-01":
+        return secondItemPhoto
+      case "82039-11":
+        return firstItemPhoto
+      case "75039":
+        return thirdItemPhoto
+
+      default:
+        return "pictureIsNotFound"
+    }
+  }
+  return "pictureIsNotFound"
+}
+
 export const getNumberOfItems = array => {
-  let result = 0
-  array.forEach(element => {
-    result += element.numberOfItems
-  })
-  return result
+  if (array.length) {
+    let result = 0
+    array.forEach(element => {
+      if (element.numberOfItems) result += element.numberOfItems
+    })
+    return result
+  }
 }

@@ -1,0 +1,193 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`BasketPage test Renders correct defaultProps 1`] = `
+<styled.div>
+  <Header />
+  <UserBlock
+    numberOfItems={0}
+    userName="test_string"
+  />
+  <NavigationBlock />
+  <MainBlock
+    checkDiscount={[Function]}
+    decrement={[Function]}
+    deleteItem={[Function]}
+    discount={false}
+    discountValue={1800}
+    increment={[Function]}
+    promocode="test"
+    userItems={Array []}
+  />
+  <AdvertisingBlock
+    addList={Array []}
+  />
+  <Footer />
+</styled.div>
+`;
+
+exports[`BasketPage test Renders correct defaultProps 2`] = `
+<styled.div>
+  <Header />
+  <UserBlock
+    numberOfItems={2}
+    userName="test_name"
+  />
+  <NavigationBlock />
+  <MainBlock
+    checkDiscount={[Function]}
+    decrement={[Function]}
+    deleteItem={[Function]}
+    discount={false}
+    discountValue={2100}
+    increment={[Function]}
+    promocode="123"
+    userItems={
+      Array [
+        Object {
+          "code": "82039-11",
+          "color": "синий",
+          "description": "Платье-миди с расклешенной юбкой",
+          "id": 1,
+          "img": "./img/img1.png",
+          "numberOfItems": 1,
+          "price": 2450,
+          "size": "44",
+        },
+        Object {
+          "code": "13524-01",
+          "color": "черный",
+          "description": "Туфли женские украшенные кружевными вставками",
+          "id": 2,
+          "img": "./img/img2.png",
+          "numberOfItems": 1,
+          "price": 2450,
+          "size": "38",
+        },
+      ]
+    }
+  />
+  <AdvertisingBlock
+    addList={
+      Array [
+        Object {
+          "code": "82039-11",
+          "color": "синий",
+          "description": "Платье-миди с расклешенной юбкой",
+          "id": 1,
+          "img": "./img/img1.png",
+          "numberOfItems": 1,
+          "price": 2450,
+          "size": "44",
+        },
+        Object {
+          "code": "13524-01",
+          "color": "черный",
+          "description": "Туфли женские украшенные кружевными вставками",
+          "id": 2,
+          "img": "./img/img2.png",
+          "numberOfItems": 1,
+          "price": 2450,
+          "size": "38",
+        },
+      ]
+    }
+  />
+  <Footer />
+</styled.div>
+`;
+
+exports[`Youtube Renders correct defaultProps 1`] = `
+<styled.div>
+  <Header />
+  <UserBlock
+    numberOfItems={0}
+    userName="test_string"
+  />
+  <NavigationBlock />
+  <MainBlock
+    checkDiscount={[Function]}
+    decrement={[Function]}
+    deleteItem={[Function]}
+    discount={false}
+    discountValue={1800}
+    increment={[Function]}
+    promocode="test"
+    userItems={Array []}
+  />
+  <AdvertisingBlock
+    addList={Array []}
+  />
+  <Footer />
+</styled.div>
+`;
+
+exports[`Youtube Renders correct defaultProps 2`] = `
+<styled.div>
+  <Header />
+  <UserBlock
+    numberOfItems={2}
+    userName="test_name"
+  />
+  <NavigationBlock />
+  <MainBlock
+    checkDiscount={[Function]}
+    decrement={[Function]}
+    deleteItem={[Function]}
+    discount={false}
+    discountValue={2100}
+    increment={[Function]}
+    promocode="123"
+    userItems={
+      Array [
+        Object {
+          "code": "82039-11",
+          "color": "синий",
+          "description": "Платье-миди с расклешенной юбкой",
+          "id": 1,
+          "img": "./img/img1.png",
+          "numberOfItems": 1,
+          "price": 2450,
+          "size": "44",
+        },
+        Object {
+          "code": "13524-01",
+          "color": "черный",
+          "description": "Туфли женские украшенные кружевными вставками",
+          "id": 2,
+          "img": "./img/img2.png",
+          "numberOfItems": 1,
+          "price": 2450,
+          "size": "38",
+        },
+      ]
+    }
+  />
+  <AdvertisingBlock
+    addList={
+      Array [
+        Object {
+          "code": "82039-11",
+          "color": "синий",
+          "description": "Платье-миди с расклешенной юбкой",
+          "id": 1,
+          "img": "./img/img1.png",
+          "numberOfItems": 1,
+          "price": 2450,
+          "size": "44",
+        },
+        Object {
+          "code": "13524-01",
+          "color": "черный",
+          "description": "Туфли женские украшенные кружевными вставками",
+          "id": 2,
+          "img": "./img/img2.png",
+          "numberOfItems": 1,
+          "price": 2450,
+          "size": "38",
+        },
+      ]
+    }
+  />
+  <Footer />
+</styled.div>
+`;

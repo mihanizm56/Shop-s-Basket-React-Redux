@@ -69,7 +69,7 @@ const initialState = {
   ],
 }
 
-export const rootReducer = (action, state = initialState) => {
+export const rootReducer = (state = initialState, action) => {
   switch (action.type) {
     case "INCREMENT_ITEM":
       return { ...state, userItems: action.payload }

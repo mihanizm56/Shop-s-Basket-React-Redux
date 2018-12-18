@@ -1,0 +1,417 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Footer test Renders correct 1`] = `
+<div
+  className="footer-wrapper"
+>
+  <div
+    className="footer-contacts"
+  >
+    <p
+      className="footer-contacts__social"
+    >
+      SHOP24 в социальных сетях:
+    </p>
+    <div
+      className="footer-contacts__logo footer-contacts__logo-vk"
+    />
+    <div
+      className="footer-contacts__logo footer-contacts__logo-fb"
+    />
+    <div
+      className="footer-contacts__logo footer-contacts__logo-3"
+    />
+    <div
+      className="footer-contacts__logo footer-contacts__logo-4"
+    />
+    <div
+      className="footer-contacts__logo footer-contacts__logo-5"
+    />
+    <div
+      className="footer-contacts__logo footer-contacts__logo-insta"
+    />
+    <div
+      className="footer-contacts__logo footer-contacts__logo-youtube"
+    />
+  </div>
+  <div
+    className="footer-nav-block"
+  >
+    <div
+      className="footer-menu"
+    >
+      <Link
+        className="footer-menu__logo"
+        replace={false}
+        to="/main"
+      />
+      <ul
+        className="footer-container-contacts contacts-list"
+      >
+        <li
+          className="footer__list contacts-list__number-1"
+        >
+          <p
+            className="footer__number-text"
+          >
+            8 (800) 500-75-55
+            <sup>
+              *
+            </sup>
+          </p>
+        </li>
+        <li
+          className="footer__list contacts-list__text-under"
+        >
+          <p
+            className="footer__under-text"
+          >
+            <sup>
+              *
+            </sup>
+            Бесплатный звонок по всей России
+          </p>
+        </li>
+        <li
+          className="footer__list contacts-list__number-2"
+        >
+          <p
+            className="footer__number-text"
+          >
+            8 (495) 733-96-03
+          </p>
+        </li>
+      </ul>
+      <ul
+        className="footer-container catalog-container"
+      >
+        <li
+          className="footer__list catalog-container__main-paragraph"
+        >
+          <Link
+            className="footer__main-text"
+            replace={false}
+            to="/catalog"
+          >
+            Каталог товаров
+          </Link>
+        </li>
+        <li
+          className="footer__list catalog-container__clothes"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/clothes"
+          >
+            Одежда и аксессуары
+          </Link>
+        </li>
+        <li
+          className="footer__list catalog-container__shoes"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/shoes"
+          >
+            Обувь
+          </Link>
+        </li>
+        <li
+          className="footer__list catalog-container__jewelry"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/jewellery"
+          >
+            Украшения
+          </Link>
+        </li>
+        <li
+          className="footer__list catalog-container__health"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/health"
+          >
+            Красота и здоровье
+          </Link>
+        </li>
+        <li
+          className="footer__list catalog-container__for-house"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/household"
+          >
+            Товары для дома, дачи и отдыха
+          </Link>
+        </li>
+        <li
+          className="footer__list catalog-container__for-kitchen"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/kitchen"
+          >
+            Товары для кухни
+          </Link>
+        </li>
+      </ul>
+      <ul
+        className="footer-container offer-container"
+      >
+        <li
+          className="footer__list offer-container__main-paragraph"
+        >
+          <Link
+            className="footer__main-text"
+            replace={false}
+            to="/offer"
+          >
+            Заказ
+          </Link>
+        </li>
+        <li
+          className="footer__list offer-container__pay"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/trnsfer"
+          >
+            Оплата и доставка
+          </Link>
+        </li>
+        <li
+          className="footer__list offer-container__return"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/return"
+          >
+            Возврат
+          </Link>
+        </li>
+        <li
+          className="footer__list offer-container__help"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/help"
+          >
+            Помощь
+          </Link>
+        </li>
+        <li
+          className="footer__list offer-container__charity"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/Hab"
+          >
+            Благотворительный Фонд Константина Хабенского
+          </Link>
+        </li>
+        <li
+          className="footer__list offer-container__warranty"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/warranty"
+          >
+            Гарантия на дополнительное обслуживание товара
+          </Link>
+        </li>
+        <li
+          className="footer__list offer-container__agreement"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/agreement"
+          >
+            Пользовательское соглашение
+          </Link>
+        </li>
+      </ul>
+      <ul
+        className="footer-container shop24-container"
+      >
+        <li
+          className="footer__list shop24-container__main-paragraph"
+        >
+          <Link
+            className="footer__main-text"
+            replace={false}
+            to="/main"
+          >
+            Shop24
+          </Link>
+        </li>
+        <li
+          className="footer__list shop24-container__live"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/live"
+          >
+            Смотреть прямой эфир
+          </Link>
+        </li>
+        <li
+          className="footer__list shop24-container__schedule"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/schedule"
+          >
+            Расписание передач
+          </Link>
+        </li>
+        <li
+          className="footer__list shop24-container__stock"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/discount"
+          >
+            Акции
+          </Link>
+        </li>
+        <li
+          className="footer__list shop24-container__cabinet"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/cabinet"
+          >
+            Личный кабинет
+          </Link>
+        </li>
+        <li
+          className="footer__list shop24-container__map"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/filter"
+          >
+            Поиск и карта сайта
+          </Link>
+        </li>
+        <li
+          className="footer__list shop24-container__brands"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/brands"
+          >
+            Карта брендов
+          </Link>
+        </li>
+        <li
+          className="footer__list shop24-container__feedback"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/feedback"
+          >
+            Обратная связь
+          </Link>
+        </li>
+      </ul>
+      <ul
+        className="footer-container info-container"
+      >
+        <li
+          className="footer__list info-container__main-paragraph"
+        >
+          <Link
+            className="footer__main-text"
+            replace={false}
+            to="/information"
+          >
+            Информация
+          </Link>
+        </li>
+        <li
+          className="footer__list info-container__about-channel"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/about"
+          >
+            О канале
+          </Link>
+        </li>
+        <li
+          className="footer__list info-container__partnership"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/partnership"
+          >
+            Сотрудничество
+          </Link>
+        </li>
+        <li
+          className="footer__list info-container__buy"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/withUs"
+          >
+            Покупайте с нами!
+          </Link>
+        </li>
+        <li
+          className="footer__list info-container__contacts"
+        >
+          <Link
+            className="footer__second-text"
+            replace={false}
+            to="/contacts"
+          >
+            Контакты
+          </Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div
+    className="footer-info"
+  >
+    <p
+      className="footer-info__paragraph"
+    >
+      Copyright © Товар ООО «Стиль и Мода», 2014-2016. Все права защищены.
+       
+      <br />
+      При использовании материалов сайта ссылка на www.shop24.com обязательна. 
+      <br />
+      115193, Москва, ул. Кожуховская 5-я, д. 9, помещение VII 
+      <br />
+      Телефон 8 800 500-75-55
+    </p>
+  </div>
+</div>
+`;

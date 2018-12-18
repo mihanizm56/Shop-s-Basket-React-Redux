@@ -346,7 +346,7 @@ describe("Testing rootReducer", () => {
       ),
     }
 
-    resultObject = rootReducer(actionCreator)
+    resultObject = rootReducer(undefined, actionCreator)
 
     expect(resultObject).toEqual(increasedState)
   })
@@ -364,7 +364,7 @@ describe("Testing rootReducer", () => {
       ),
     }
 
-    resultObject = rootReducer(actionCreator)
+    resultObject = rootReducer(undefined, actionCreator)
 
     expect(resultObject).toEqual(initialState)
   })
@@ -382,7 +382,7 @@ describe("Testing rootReducer", () => {
       ),
     }
 
-    resultObject = rootReducer(actionCreator)
+    resultObject = rootReducer(undefined, actionCreator)
 
     expect(resultObject).toEqual(filteredState)
   })
@@ -393,7 +393,7 @@ describe("Testing rootReducer", () => {
       payload: true,
     }
 
-    resultObject = rootReducer(actionCreator)
+    resultObject = rootReducer(undefined, actionCreator)
 
     expect(resultObject).toEqual(discountState)
   })
@@ -404,7 +404,7 @@ describe("Testing rootReducer", () => {
       payload: "12345",
     }
 
-    resultObject = rootReducer(actionCreator)
+    resultObject = rootReducer(undefined, actionCreator)
 
     expect(resultObject).toEqual(initialState)
   })

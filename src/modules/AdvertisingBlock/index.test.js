@@ -1,32 +1,32 @@
 import React from "react"
 import { shallow } from "enzyme"
-import { AdvertisingBlock } from "."
+import { AdvertisingBlock } from "./index"
 
-describe("AdvertisingBlock testing", () => {
-  it("AdvertisingBlock render defaultProps", () => {
+describe("Youtube", () => {
+  const testArray = [
+    {
+      name: "test_name_1",
+      price: "1234",
+    },
+    {
+      name: "test_name_2",
+      price: "1234",
+    },
+    {
+      name: "test_name_3",
+      price: "1234",
+    },
+  ]
+
+  it("Renders correct defaultProps", () => {
     const component = shallow(<AdvertisingBlock />)
+
     expect(component).toMatchSnapshot()
   })
-  it("AdvertisingBlock render array", () => {
-    const randomArray = [
-      {
-        name: "test_1",
-        price: "test_rubles",
-      },
-      {
-        name: "test_2",
-        price: "test_rubles",
-      },
-      {
-        name: "test_3",
-        price: "test_rubles",
-      },
-      {
-        name: "test_4",
-        price: "test_rubles",
-      },
-    ]
-    const component = shallow(<AdvertisingBlock addList={randomArray} />)
+
+  it("Renders correct defaultProps", () => {
+    const component = shallow(<AdvertisingBlock addList={testArray} />)
+
     expect(component).toMatchSnapshot()
   })
 })

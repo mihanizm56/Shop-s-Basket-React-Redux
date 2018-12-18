@@ -144,6 +144,19 @@ describe("changeNumberOfItems", () => {
   ]
 
   describe("changeNumberOfItems works", () => {
+    it("changeNumberOfItems incorrect", () => {
+      const number = newArray[2].numberOfItems
+      const paramenter = "increase"
+      const result = changeNumberOfItems(
+        newArray,
+        undefined,
+        number,
+        paramenter
+      )
+
+      expect(result).toEqual(newArray)
+    })
+
     it("changeNumberOfItems increasing", () => {
       const id = 2
       const number = newArray[id - 1].numberOfItems
@@ -237,6 +250,11 @@ describe("changeNumberOfItems", () => {
       const result = getAdPhoto("75039")
 
       expect(result).toEqual(thirdItemPhoto)
+    })
+    it("getAdPhoto gives incorrect photo", () => {
+      const result = getAdPhoto("202020")
+
+      expect(result).toEqual("pictureIsNotFound")
     })
     it("getAdPhoto gives photo undefined", () => {
       const result = getAdPhoto(undefined)

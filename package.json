@@ -20,9 +20,6 @@
     "precommit": "lint-staged",
     "eslint": "node_modules/.bin/eslint src/"
   },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
   "browserslist": [
     ">0.2%",
     "not dead",
@@ -53,10 +50,5 @@
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run eslint"
-    }
   }
 }

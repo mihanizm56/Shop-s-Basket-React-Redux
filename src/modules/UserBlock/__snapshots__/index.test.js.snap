@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UserBlock test Renders correct with props 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.div>
+      <styled.div />
+      <FindComponent />
+    </styled.div>
+    <styled.div>
+      <styled.div>
+        <styled.div />
+        <styled.p>
+          test_name
+        </styled.p>
+      </styled.div>
+      <styled.div>
+        <styled.div />
+        <NumberOfItems
+          numberOfItems={10}
+        />
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;
+
+exports[`UserBlock test Renders correct without props 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.div>
+      <styled.div />
+      <FindComponent />
+    </styled.div>
+    <styled.div>
+      <styled.div>
+        <styled.div />
+        <styled.p />
+      </styled.div>
+      <styled.div>
+        <styled.div />
+        <NumberOfItems
+          numberOfItems={0}
+        />
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;
