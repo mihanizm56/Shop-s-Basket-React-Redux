@@ -1,0 +1,123 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MainBlock test Renders correct default props 1`] = `
+<styled.div>
+  <styled.h2>
+    Ваша корзина
+  </styled.h2>
+  <styled.div>
+    <styled.div>
+      <styled.p>
+        Товар
+      </styled.p>
+      <styled.p>
+        Описание
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.p>
+        Количество
+      </styled.p>
+      <styled.p>
+        Цена
+      </styled.p>
+      <styled.p>
+        Удалить
+      </styled.p>
+    </styled.div>
+  </styled.div>
+  <styled.div />
+  <DiscountWrapper
+    checkDiscount={[Function]}
+    discount={false}
+    discountValue={1800}
+    promocode=""
+    userItems={Array []}
+  />
+</styled.div>
+`;
+
+exports[`MainBlock test Renders correct normal props 1`] = `
+<styled.div>
+  <styled.h2>
+    Ваша корзина
+  </styled.h2>
+  <styled.div>
+    <styled.div>
+      <styled.p>
+        Товар
+      </styled.p>
+      <styled.p>
+        Описание
+      </styled.p>
+    </styled.div>
+    <styled.div>
+      <styled.p>
+        Количество
+      </styled.p>
+      <styled.p>
+        Цена
+      </styled.p>
+      <styled.p>
+        Удалить
+      </styled.p>
+    </styled.div>
+  </styled.div>
+  <styled.div>
+    <styled.div>
+      <styled.div
+        style={
+          Object {
+            "backgroundImage": "url(pictureIsNotFound)",
+          }
+        }
+      />
+      <styled.div>
+        <styled.p />
+        <styled.p>
+          Код: 
+        </styled.p>
+        <styled.p>
+          Размер: 
+        </styled.p>
+        <styled.p>
+          Цвет: 
+        </styled.p>
+      </styled.div>
+      <EditNumber
+        decrement={[Function]}
+        id={0}
+        increment={[Function]}
+        numberOfItems={0}
+        userItems={
+          Array [
+            Object {},
+          ]
+        }
+      />
+      <styled.p>
+         руб.
+      </styled.p>
+      <styled.div
+        onClick={[Function]}
+        style={
+          Object {
+            "backgroundImage": "url(remove.png)",
+          }
+        }
+      />
+    </styled.div>
+  </styled.div>
+  <DiscountWrapper
+    checkDiscount={[Function]}
+    discount={false}
+    discountValue={5500}
+    promocode="test_code"
+    userItems={
+      Array [
+        Object {},
+      ]
+    }
+  />
+</styled.div>
+`;

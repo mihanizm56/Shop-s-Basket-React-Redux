@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header test Renders correct 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.div>
+      <Number />
+      <FreeCall />
+    </styled.div>
+    <styled.div>
+      <styled.div>
+        <styled.div />
+        <Star />
+      </styled.div>
+      <styled.div>
+        <styled.div />
+        <Youtube />
+      </styled.div>
+      <styled.div>
+        <styled.div />
+        <LiveStream />
+      </styled.div>
+    </styled.div>
+  </styled.div>
+</styled.div>
+`;
