@@ -85,9 +85,10 @@ exports[`MainBlock test Renders correct normal props 1`] = `
         </styled.p>
       </styled.div>
       <EditNumber
-        decrement={[Function]}
+        className="editNumber"
+        decrement={[MockFunction]}
         id={0}
-        increment={[Function]}
+        increment={[MockFunction]}
         numberOfItems={0}
         userItems={
           Array [
@@ -99,6 +100,7 @@ exports[`MainBlock test Renders correct normal props 1`] = `
          руб.
       </styled.p>
       <styled.div
+        className="icon_delete"
         onClick={[Function]}
         style={
           Object {
@@ -109,7 +111,7 @@ exports[`MainBlock test Renders correct normal props 1`] = `
     </styled.div>
   </styled.div>
   <DiscountWrapper
-    checkDiscount={[Function]}
+    checkDiscount={[MockFunction]}
     discount={false}
     discountValue={5500}
     promocode="test_code"

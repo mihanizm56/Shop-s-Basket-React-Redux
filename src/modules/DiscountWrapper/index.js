@@ -1,16 +1,16 @@
-import React from "react";
-import "./DiscountWrapper.css";
-import PropTypes from "prop-types";
-import { checkSumOfItems } from "../../helpers/";
+import React from "react"
+import "./DiscountWrapper.css"
+import PropTypes from "prop-types"
+import { checkSumOfItems } from "../../helpers/"
 
 export const DiscountWrapper = ({
   promocode,
   userItems,
   discount,
   checkDiscount,
-  discountValue
+  discountValue,
 }) => {
-  let textInput = React.createRef();
+  let textInput = React.createRef()
   return (
     <div className="promo-wrapper">
       <div className="promo-enter">
@@ -64,21 +64,19 @@ export const DiscountWrapper = ({
         <button className="check-sum__button">Оформить заказ</button>
       </div>
     </div>
-  );
-};
+  )
+}
 
 DiscountWrapper.defaultProps = {
   promocode: "111",
   userItems: [],
   discount: false,
-  checkDiscount: () => "",
-  discountValue: 0
-};
+  discountValue: 0,
+}
 
 DiscountWrapper.propTypes = {
   promocode: PropTypes.string.isRequired,
   userItems: PropTypes.array.isRequired,
   discount: PropTypes.bool.isRequired,
-  checkDiscount: PropTypes.func.isRequired,
-  discountValue: PropTypes.number.isRequired
-};
+  discountValue: PropTypes.number.isRequired,
+}

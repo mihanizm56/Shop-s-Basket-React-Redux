@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
-import { EditNumber } from "../../components/";
-import { DiscountWrapper } from "../";
-import {getAdPhoto} from "../../helpers/";
-import crossIcon from "./img/remove.png";
+import React from "react"
+import styled from "styled-components"
+import PropTypes from "prop-types"
+import { EditNumber } from "../../components/"
+import { DiscountWrapper } from "../"
+import { getAdPhoto } from "../../helpers/"
+import crossIcon from "./img/remove.png"
 
 const MainTitle = styled.h2`
   align-self: center;
@@ -37,27 +37,27 @@ const MainTitle = styled.h2`
   &::after {
     margin-left: 25px;
   }
-`;
+`
 
 const MainBlockWrapper = styled.div`
   display: flex;
   flex-direction: column;
-`;
+`
 
 const TableTitles = styled.div`
   display: flex;
   margin-bottom: 44px;
-`;
+`
 
 const FirstBlock = styled.div`
   display: flex;
   width: 574px;
-`;
+`
 
 const SecondBlock = styled.div`
   display: flex;
   width: 596px;
-`;
+`
 
 const TitleNameItem = styled.p`
   margin: 0;
@@ -67,7 +67,7 @@ const TitleNameItem = styled.p`
   color: rgb(0, 0, 0);
   line-height: 1.2;
   margin-right: 148px;
-`;
+`
 
 const TitleNameDescription = styled.p`
   margin: 0;
@@ -76,7 +76,7 @@ const TitleNameDescription = styled.p`
   font-family: "Roboto";
   color: rgb(0, 0, 0);
   line-height: 1.2;
-`;
+`
 
 const TitleNameNumber = styled.p`
   margin: 0;
@@ -86,7 +86,7 @@ const TitleNameNumber = styled.p`
   color: rgb(0, 0, 0);
   line-height: 1.2;
   margin-right: 186px;
-`;
+`
 
 const TitleNamePrice = styled.p`
   margin: 0;
@@ -96,7 +96,7 @@ const TitleNamePrice = styled.p`
   color: rgb(0, 0, 0);
   line-height: 1.2;
   margin-right: 215px;
-`;
+`
 
 const TitleNameDelete = styled.p`
   margin: 0;
@@ -105,16 +105,16 @@ const TitleNameDelete = styled.p`
   font-family: "Roboto";
   color: rgb(0, 0, 0);
   line-height: 1.2;
-`;
+`
 
-const ItemWrapper = styled.div``;
+const ItemWrapper = styled.div``
 
 const ItemContainer = styled.div`
   height: 176px;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 35px;
-`;
+`
 
 const ItemPhoto = styled.div`
   height: 178px;
@@ -122,12 +122,12 @@ const ItemPhoto = styled.div`
   margin-right: 15px;
   background-size: contain;
   background-repeat: no-repeat;
-`;
+`
 
 const DescriptionWrapper = styled.div`
   width: 211px;
   margin-right: 173px;
-`;
+`
 
 const ItemName = styled.p`
   margin: 0;
@@ -135,7 +135,7 @@ const ItemName = styled.p`
   font-family: "Roboto";
   font-size: 15px;
   width: 211px;
-`;
+`
 
 const ItemCode = styled.p`
   margin: 13px 0 0 0;
@@ -143,21 +143,21 @@ const ItemCode = styled.p`
   font-family: "Roboto";
   font-size: 14px;
   color: #808080;
-`;
+`
 
 const ItemSize = styled.p`
   margin: 15px 0 0 0;
   padding: 0;
   font-family: "Roboto";
   font-size: 15px;
-`;
+`
 
 const ItemColor = styled.p`
   margin: 0;
   padding: 0;
   font-family: "Roboto";
   font-size: 15px;
-`;
+`
 
 const ItemPrice = styled.p`
   display: flex;
@@ -167,7 +167,7 @@ const ItemPrice = styled.p`
   padding: 0;
   margin-top: 0;
   margin-right: 213px;
-`;
+`
 
 const DeleteIcon = styled.div`
   width: 18px;
@@ -175,7 +175,7 @@ const DeleteIcon = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   cursor: pointer;
-`;
+`
 
 export const MainBlock = ({
   userItems,
@@ -185,7 +185,7 @@ export const MainBlock = ({
   promocode,
   discount,
   checkDiscount,
-  discountValue
+  discountValue,
 }) => {
   return (
     <MainBlockWrapper>
@@ -215,6 +215,7 @@ export const MainBlock = ({
                 <ItemColor>Цвет: {item.color}</ItemColor>
               </DescriptionWrapper>
               <EditNumber
+                className="editNumber"
                 userItems={userItems}
                 id={item.id}
                 numberOfItems={item.numberOfItems}
@@ -223,11 +224,12 @@ export const MainBlock = ({
               />
               <ItemPrice>{item.price} руб.</ItemPrice>
               <DeleteIcon
+                className="icon_delete"
                 style={{ backgroundImage: `url(${crossIcon})` }}
                 onClick={() => deleteItem(userItems, item.id)}
               />
             </ItemContainer>
-          );
+          )
         })}
       </ItemWrapper>
       <DiscountWrapper
@@ -238,19 +240,19 @@ export const MainBlock = ({
         checkDiscount={checkDiscount}
       />
     </MainBlockWrapper>
-  );
-};
+  )
+}
 
 MainBlock.defaultProps = {
   userItems: [],
-  increment: () => "",
-  decrement: () => "",
-  deleteItem: () => "",
+  increment: () => "test_increment",
+  decrement: () => "test_decrement",
+  deleteItem: () => "test_deleteItem",
   promocode: "",
   discount: false,
-  checkDiscount: () => "",
-  discountValue: 1800
-};
+  checkDiscount: () => "test_checkDiscount",
+  discountValue: 1800,
+}
 
 MainBlock.propTypes = {
   userItems: PropTypes.array.isRequired,
@@ -260,5 +262,5 @@ MainBlock.propTypes = {
   promocode: PropTypes.string.isRequired,
   discount: PropTypes.bool.isRequired,
   checkDiscount: PropTypes.func.isRequired,
-  discountValue: PropTypes.number.isRequired
-};
+  discountValue: PropTypes.number.isRequired,
+}

@@ -20,28 +20,28 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">37.5% </span>
+        <span class="strong">85.71% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>3/8</span>
+        <span class='fraction'>6/7</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/12</span>
+        <span class='fraction'>12/12</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">66.67% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/4</span>
+        <span class='fraction'>2/3</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">37.5% </span>
+        <span class="strong">85.71% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>3/8</span>
+        <span class='fraction'>6/7</span>
       </div>
     </div>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet">1
 2
@@ -125,13 +125,19 @@
 80
 81
 82
-83
-84
-85</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+83</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -140,17 +146,15 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -190,41 +194,33 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react";
-import "./DiscountWrapper.css";
-import PropTypes from "prop-types";
-import { checkSumOfItems } from "../../helpers/";
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react"
+import "./DiscountWrapper.css"
+import PropTypes from "prop-types"
+import { checkSumOfItems } from "../../helpers/"
 &nbsp;
-export const DiscountWrapper = <span class="fstat-no" title="function not covered" >({</span>
+export const DiscountWrapper = ({
   promocode,
   userItems,
   discount,
   checkDiscount,
-  discountValue
+  discountValue,
 }) =&gt; {
-  let textInput = <span class="cstat-no" title="statement not covered" >React.createRef();</span>
-<span class="cstat-no" title="statement not covered" >  return (</span>
+  let textInput = React.createRef()
+  return (
     &lt;div className="promo-wrapper"&gt;
       &lt;div className="promo-enter"&gt;
         &lt;p className="promo-enter__title"&gt;Есть промокод?&lt;/p&gt;
@@ -234,7 +230,7 @@ export const DiscountWrapper = <span class="fstat-no" title="function not covere
             onChange={<span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >checkDiscount(textInput.value, promocode)}</span>
             placeholder="Введите промокод"
             type="text"
-            ref={<span class="fstat-no" title="function not covered" >in</span>put =&gt; (<span class="cstat-no" title="statement not covered" >textInput = input)</span>}
+            ref={input =&gt; (textInput = input)}
           /&gt;
           &lt;button
             className="input-block__button"
@@ -277,31 +273,29 @@ export const DiscountWrapper = <span class="fstat-no" title="function not covere
         &lt;button className="check-sum__button"&gt;Оформить заказ&lt;/button&gt;
       &lt;/div&gt;
     &lt;/div&gt;
-  );
-};
+  )
+}
 &nbsp;
 DiscountWrapper.defaultProps = {
   promocode: "111",
   userItems: [],
   discount: false,
-  checkDiscount: <span class="fstat-no" title="function not covered" >()</span> =&gt; <span class="cstat-no" title="statement not covered" >"",</span>
-  discountValue: 0
-};
+  discountValue: 0,
+}
 &nbsp;
 DiscountWrapper.propTypes = {
   promocode: PropTypes.string.isRequired,
   userItems: PropTypes.array.isRequired,
   discount: PropTypes.bool.isRequired,
-  checkDiscount: PropTypes.func.isRequired,
-  discountValue: PropTypes.number.isRequired
-};
+  discountValue: PropTypes.number.isRequired,
+}
 &nbsp;</pre></td></tr>
 </table></pre>
 <div class='push'></div><!-- for sticky footer -->
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sat Dec 22 2018 01:41:11 GMT+0400 (Московское время (зима))
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 24 2018 23:46:55 GMT+0400 (Московское время (зима))
 </div>
 </div>
 <script src="..\..\..\prettify.js"></script>
