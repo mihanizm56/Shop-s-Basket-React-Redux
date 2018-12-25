@@ -1,15 +1,9 @@
 {
   "extends": [
-    "react-app",
-    "prettier"
+    "airbnb"
   ],
   "rules": {
-    "jsx-quotes": [
-      1,
-      "prefer-double"
-    ]
+    "linebreak-style": 0
   },
-  "plugins": [
-    "prettier"
-  ]
+  "plugins": []
 }

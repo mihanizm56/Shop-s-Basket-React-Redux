@@ -18,7 +18,8 @@
     "test": "react-scripts test",
     "test-cover": "react-scripts test --coverage",
     "precommit": "lint-staged",
-    "eslint": "node_modules/.bin/eslint src/"
+    "eslint": "node_modules/.bin/eslint src/",
+    "flow": "flow"
   },
   "browserslist": [
     ">0.2%",
@@ -30,14 +31,16 @@
     "enzyme": "^3.7.0",
     "enzyme-adapter-react-16": "^1.7.1",
     "enzyme-to-json": "^3.3.5",
-    "eslint": "^5.6.0",
+    "eslint": "^5.11.0",
+    "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^3.3.0",
     "eslint-plugin-prettier": "^3.0.0",
     "eslint-plugin-react": "^7.11.1",
-    "husky": "^1.2.0",
+    "flow-bin": "^0.89.0",
+    "husky": "^1.2.1",
     "lint-staged": "^8.1.0",
     "prettier": "^1.15.3",
-    "react-test-renderer": "^16.6.3"
+    "react-test-renderer": "^16.7.0"
   },
   "lint-staged": {
     "*.{js, jsx}": [
