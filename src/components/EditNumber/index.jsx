@@ -50,39 +50,56 @@ const Minus = styled.div`
 `;
 
 // функции описать
+
+type ObjectUser = {
+  img: string,
+  description: string,
+  code: string,
+  size: string,
+  color: string,
+  price: number,
+  numberOfItems: number,
+  id: number,
+}
+
+type TypedUserItems = Array<ObjectUser> | []
+
 type typedProps = {
-  userItems: any,
-  id: ?number,
-  numberOfItems: ?number,
-  increment: any,
-  decrement: any,
+  userItems?: TypedUserItems,
+  id?: ?number,
+  numberOfItems?: ?number,
+  increment?: any,
+  decrement?: any,
 };
 
-export const EditNumber = (props: typedProps) => {
-  const {
-    userItems: Array, id, numberOfItems, increment, decrement,
-  } = props;
+export function EditNumber(props: typedProps) {
+  const { userItems, id, numberOfItems, increment, decrement } = props;
   return (
     <EditWrapper>
-      <Minus className="decrementFunc" onClick={() => decrement(userItems, id, numberOfItems)}>
+      <Minus
+        className="decrementFunc"
+        onClick={() => decrement(userItems, id, numberOfItems)}
+      >
         -
       </Minus>
       <NumberOfItems>{numberOfItems}</NumberOfItems>
-      <Plus className="incrementFunc" onClick={() => increment(userItems, id, numberOfItems)}>
+      <Plus
+        className="incrementFunc"
+        onClick={() => increment(userItems, id, numberOfItems)}
+      >
         +
       </Plus>
     </EditWrapper>
   );
-};
+}
 
-// надо пропсы прописать, но по типизации
-// EditNumber.defaultProps = {
-//   userItems: [],
-//   id: 0,
-//   numberOfItems: 0,
-//   increment: () => 'test_increment',
-//   decrement: () => 'test_decrement',
-// };
+EditNumber.defaultProps = {
+  userItems: [],
+  id: 0,
+  numberOfItems: 0,
+  increment: () => 'test_increment',
+  decrement: () => 'test_decrement',
+};
 
 // EditNumber.propTypes = {
 //   userItems: PropTypes.array.isRequired,
