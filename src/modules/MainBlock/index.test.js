@@ -12,7 +12,7 @@ describe("MainBlock test", () => {
   it("Renders correct normal props", () => {
     const component = shallow(
       <MainBlock
-        userItems={[{}]}
+        userItems={[{id:1}]}
         increment={() => "test"}
         decrement={() => "test"}
         deleteItem={() => "test"}
