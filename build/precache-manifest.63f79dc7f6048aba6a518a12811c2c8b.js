@@ -48,16 +48,16 @@ self.__precacheManifest = [
     "url": "/static/media/Roboto-Regular.54a91b06.ttf"
   },
   {
-    "revision": "99fc0816a09395454061301fefa42bf1",
-    "url": "/static/media/Roboto-Medium.99fc0816.ttf"
+    "revision": "afa7a91dadd77b23634a0fdf18c148f3",
+    "url": "/static/media/Roboto-Bold.afa7a91d.ttf"
   },
   {
     "revision": "5ecbc99d1a81fed7dc71cb068ec0a74d",
     "url": "/static/media/Roboto-Thin.5ecbc99d.ttf"
   },
   {
-    "revision": "afa7a91dadd77b23634a0fdf18c148f3",
-    "url": "/static/media/Roboto-Bold.afa7a91d.ttf"
+    "revision": "99fc0816a09395454061301fefa42bf1",
+    "url": "/static/media/Roboto-Medium.99fc0816.ttf"
   },
   {
     "revision": "34f8b3e07ba7114019dda962e9a91a6c",
