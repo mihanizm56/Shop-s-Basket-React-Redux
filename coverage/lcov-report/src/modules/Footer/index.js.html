@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!doctype html>
 <html lang="en">
 <head>
@@ -642,3 +643,649 @@ window.onload = function () {
 <script src="..\..\..\sorter.js"></script>
 </body>
 </html>
+=======
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/modules/Footer/index.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\index.html">All files</a> / <a href="index.html">src/modules/Footer</a> index.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>2/2</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>0/0</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>2/2</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187
+188
+189
+190
+191
+192
+193
+194</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React from "react"
+import { Link } from "react-router-dom"
+import "./Footer.css"
+&nbsp;
+export const Footer = () =&gt; {
+  return (
+    &lt;div className="footer-wrapper"&gt;
+      &lt;div className="footer-contacts"&gt;
+        &lt;p className="footer-contacts__social"&gt;SHOP24 в социальных сетях:&lt;/p&gt;
+        &lt;div className="footer-contacts__logo footer-contacts__logo-vk" /&gt;
+        &lt;div className="footer-contacts__logo footer-contacts__logo-fb" /&gt;
+        &lt;div className="footer-contacts__logo footer-contacts__logo-3" /&gt;
+        &lt;div className="footer-contacts__logo footer-contacts__logo-4" /&gt;
+        &lt;div className="footer-contacts__logo footer-contacts__logo-5" /&gt;
+        &lt;div className="footer-contacts__logo footer-contacts__logo-insta" /&gt;
+        &lt;div className="footer-contacts__logo footer-contacts__logo-youtube" /&gt;
+      &lt;/div&gt;
+      &lt;div className="footer-nav-block"&gt;
+        &lt;div className="footer-menu"&gt;
+          &lt;Link to="/main" className="footer-menu__logo" /&gt;
+          &lt;ul className="footer-container-contacts contacts-list"&gt;
+            &lt;li className="footer__list contacts-list__number-1"&gt;
+              &lt;p className="footer__number-text"&gt;
+                8 (800) 500-75-55&lt;sup&gt;*&lt;/sup&gt;
+              &lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list contacts-list__text-under"&gt;
+              &lt;p className="footer__under-text"&gt;
+                &lt;sup&gt;*&lt;/sup&gt;Бесплатный звонок по всей России
+              &lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list contacts-list__number-2"&gt;
+              &lt;p className="footer__number-text"&gt;8 (495) 733-96-03&lt;/p&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;ul className="footer-container catalog-container"&gt;
+            &lt;li className="footer__list catalog-container__main-paragraph"&gt;
+              &lt;Link to="/catalog" className="footer__main-text"&gt;
+                Каталог товаров
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list catalog-container__clothes"&gt;
+              &lt;Link to="/clothes" className="footer__second-text"&gt;
+                Одежда и аксессуары
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list catalog-container__shoes"&gt;
+              &lt;Link to="/shoes" className="footer__second-text"&gt;
+                Обувь
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list catalog-container__jewelry"&gt;
+              &lt;Link to="/jewellery" className="footer__second-text"&gt;
+                Украшения
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list catalog-container__health"&gt;
+              &lt;Link to="/health" className="footer__second-text"&gt;
+                Красота и здоровье
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list catalog-container__for-house"&gt;
+              &lt;Link to="/household" className="footer__second-text"&gt;
+                Товары для дома, дачи и отдыха
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list catalog-container__for-kitchen"&gt;
+              &lt;Link to="/kitchen" className="footer__second-text"&gt;
+                Товары для кухни
+              &lt;/Link&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;ul className="footer-container offer-container"&gt;
+            &lt;li className="footer__list offer-container__main-paragraph"&gt;
+              &lt;Link to="/offer" className="footer__main-text"&gt;
+                Заказ
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list offer-container__pay"&gt;
+              &lt;Link to="/trnsfer" className="footer__second-text"&gt;
+                Оплата и доставка
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list offer-container__return"&gt;
+              &lt;Link to="/return" className="footer__second-text"&gt;
+                Возврат
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list offer-container__help"&gt;
+              &lt;Link to="/help" className="footer__second-text"&gt;
+                Помощь
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list offer-container__charity"&gt;
+              &lt;Link to="/Hab" className="footer__second-text"&gt;
+                Благотворительный Фонд Константина Хабенского
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list offer-container__warranty"&gt;
+              &lt;Link to="/warranty" className="footer__second-text"&gt;
+                Гарантия на дополнительное обслуживание товара
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list offer-container__agreement"&gt;
+              &lt;Link to="/agreement" className="footer__second-text"&gt;
+                Пользовательское соглашение
+              &lt;/Link&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;ul className="footer-container shop24-container"&gt;
+            &lt;li className="footer__list shop24-container__main-paragraph"&gt;
+              &lt;Link to="/main" className="footer__main-text"&gt;
+                Shop24
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list shop24-container__live"&gt;
+              &lt;Link to="/live" className="footer__second-text"&gt;
+                Смотреть прямой эфир
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list shop24-container__schedule"&gt;
+              &lt;Link to="/schedule" className="footer__second-text"&gt;
+                Расписание передач
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list shop24-container__stock"&gt;
+              &lt;Link to="/discount" className="footer__second-text"&gt;
+                Акции
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list shop24-container__cabinet"&gt;
+              &lt;Link to="/cabinet" className="footer__second-text"&gt;
+                Личный кабинет
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list shop24-container__map"&gt;
+              &lt;Link to="/filter" className="footer__second-text"&gt;
+                Поиск и карта сайта
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list shop24-container__brands"&gt;
+              &lt;Link to="/brands" className="footer__second-text"&gt;
+                Карта брендов
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list shop24-container__feedback"&gt;
+              &lt;Link to="/feedback" className="footer__second-text"&gt;
+                Обратная связь
+              &lt;/Link&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;ul className="footer-container info-container"&gt;
+            &lt;li className="footer__list info-container__main-paragraph"&gt;
+              &lt;Link to="/information" className="footer__main-text"&gt;
+                Информация
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list info-container__about-channel"&gt;
+              &lt;Link to="/about" className="footer__second-text"&gt;
+                О канале
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list info-container__partnership"&gt;
+              &lt;Link to="/partnership" className="footer__second-text"&gt;
+                Сотрудничество
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list info-container__buy"&gt;
+              &lt;Link to="/withUs" className="footer__second-text"&gt;
+                Покупайте с нами!
+              &lt;/Link&gt;
+            &lt;/li&gt;
+            &lt;li className="footer__list info-container__contacts"&gt;
+              &lt;Link to="/contacts" className="footer__second-text"&gt;
+                Контакты
+              &lt;/Link&gt;
+            &lt;/li&gt;
+          &lt;/ul&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div className="footer-info"&gt;
+        &lt;p className="footer-info__paragraph"&gt;
+          Copyright © Товар ООО «Стиль и Мода», 2014-2016. Все права защищены.{" "}
+          &lt;br /&gt;
+          При использовании материалов сайта ссылка на www.shop24.com
+          обязательна. &lt;br /&gt;
+          115193, Москва, ул. Кожуховская 5-я, д. 9, помещение VII &lt;br /&gt;
+          Телефон 8 800 500-75-55
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+  )
+}
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Dec 24 2018 23:46:55 GMT+0400 (Московское время (зима))
+</div>
+</div>
+<script src="..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\sorter.js"></script>
+</body>
+</html>
+>>>>>>> a95476b0614c1aa56081a6a36a9b3c7c767c1405

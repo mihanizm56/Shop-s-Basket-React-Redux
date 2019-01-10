@@ -1,0 +1,258 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<div
+  className="promo-wrapper"
+>
+  <div
+    className="promo-enter"
+  >
+    <p
+      className="promo-enter__title"
+    >
+      Есть промокод?
+    </p>
+    <div
+      className="input-block"
+    >
+      <input
+        className="input-block__input"
+        onChange={[Function]}
+        placeholder="Введите промокод"
+        type="text"
+      />
+      <button
+        className="input-block__button"
+        style={
+          Object {
+            "backgroundColor": "#FF6D00",
+          }
+        }
+      >
+        Применить
+      </button>
+    </div>
+  </div>
+  <div
+    className="check-sum"
+  >
+    <div
+      className="sum-display"
+    >
+      <div
+        className="first-text-block"
+      >
+        <span
+          className="first-text-block-text first-text-block__sum-text"
+        >
+          Сумма заказа:
+        </span>
+        <span
+          className="first-text-block-text first-text-block__promo-text"
+        >
+          Промокод:
+        </span>
+        <span
+          className="first-text-block-text first-text-block__result-text"
+        >
+          Всего:
+        </span>
+      </div>
+      <div
+        className="second-text-block"
+      >
+        <span
+          className="second-text-block-text second-text-block__sum-value"
+        >
+          9800
+           руб.
+        </span>
+        <span
+          className="second-text-block-text second-text-block__promo-value"
+        >
+          2000 руб.
+        </span>
+        <span
+          className="second-text-block-text second-text-block__result-value"
+        >
+          7800
+           
+          руб.
+        </span>
+      </div>
+    </div>
+    <button
+      className="check-sum__button"
+    >
+      Оформить заказ
+    </button>
+  </div>
+</div>
+`;
+
+exports[`DiscountWrapper test Renders correct with props 1`] = `
+<div
+  className="promo-wrapper"
+>
+  <div
+    className="promo-enter"
+  >
+    <p
+      className="promo-enter__title"
+    >
+      Есть промокод?
+    </p>
+    <div
+      className="input-block"
+    >
+      <input
+        className="input-block__input"
+        onChange={[Function]}
+        placeholder="Введите промокод"
+        type="text"
+      />
+      <button
+        className="input-block__button"
+        style={
+          Object {
+            "backgroundColor": "#FF6D00",
+          }
+        }
+      >
+        Применить
+      </button>
+    </div>
+  </div>
+  <div
+    className="check-sum"
+  >
+    <div
+      className="sum-display"
+    >
+      <div
+        className="first-text-block"
+      >
+        <span
+          className="first-text-block-text first-text-block__sum-text"
+        >
+          Сумма заказа:
+        </span>
+        <span
+          className="first-text-block-text first-text-block__promo-text"
+        >
+          Промокод:
+        </span>
+        <span
+          className="first-text-block-text first-text-block__result-text"
+        >
+          Всего:
+        </span>
+      </div>
+      <div
+        className="second-text-block"
+      >
+        <span
+          className="second-text-block-text second-text-block__sum-value"
+        >
+          9800
+           руб.
+        </span>
+        <span
+          className="second-text-block-text second-text-block__promo-value"
+        >
+          2000 руб.
+        </span>
+        <span
+          className="second-text-block-text second-text-block__result-value"
+        >
+          7800
+           
+          руб.
+        </span>
+      </div>
+    </div>
+    <button
+      className="check-sum__button"
+    >
+      Оформить заказ
+    </button>
+  </div>
+</div>
+`;
+
+exports[`DiscountWrapper test Renders correct without props 1`] = `
+<div
+  className="promo-wrapper"
+>
+  <div
+    className="promo-enter"
+  >
+    <p
+      className="promo-enter__title"
+    >
+      Есть промокод?
+    </p>
+    <div
+      className="input-block"
+    >
+      <input
+        className="input-block__input"
+        onChange={[Function]}
+        placeholder="Введите промокод"
+        type="text"
+      />
+      <button
+        className="input-block__button"
+        style={Object {}}
+      >
+        Применить
+      </button>
+    </div>
+  </div>
+  <div
+    className="check-sum"
+  >
+    <div
+      className="sum-display"
+    >
+      <div
+        className="first-text-block"
+      >
+        <span
+          className="first-text-block-text first-text-block__sum-text"
+        >
+          Сумма заказа:
+        </span>
+        <span
+          className="first-text-block-text first-text-block__result-text"
+        >
+          Всего:
+        </span>
+      </div>
+      <div
+        className="second-text-block"
+      >
+        <span
+          className="second-text-block-text second-text-block__sum-value"
+        >
+           руб.
+        </span>
+        <span
+          className="second-text-block-text second-text-block__promo-value"
+        />
+        <span
+          className="second-text-block-text second-text-block__result-value"
+        >
+           
+          руб.
+        </span>
+      </div>
+    </div>
+    <button
+      className="check-sum__button"
+    >
+      Оформить заказ
+    </button>
+  </div>
+</div>
+`;
