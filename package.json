@@ -18,7 +18,7 @@
     "test": "react-scripts test",
     "test-cover": "react-scripts test --coverage",
     "precommit": "lint-staged",
-    "eslint": "node_modules/.bin/eslint src/"
+    "lint": "node_modules/.bin/eslint src/"
   },
   "browserslist": [
     ">0.2%",
