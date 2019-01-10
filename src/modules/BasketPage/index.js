@@ -30,16 +30,6 @@ export const BasketPage = ({
   discountValue,
   checkDiscount,
 }) => {
-  console.log(typeof adItems)
-  console.log(typeof userName)
-  console.log(typeof userItems)
-  console.log(typeof increment)
-  console.log(typeof decrement)
-  console.log(typeof deleteItem)
-  console.log(typeof promocode)
-  console.log(typeof discount)
-  console.log(typeof discountValue)
-  console.log(typeof checkDiscoun)
   return (
     <MainWrapper>
       <Header />
