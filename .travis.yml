@@ -7,8 +7,6 @@ cache:
   directories:
     -"node_modules"
 
-cache: npm
-
 install:
   - npm install
 
